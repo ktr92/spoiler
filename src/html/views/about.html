@@ -1,0 +1,130 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="innerpage">
+          <div class="pageheaderblock m-0 aboutimage" >
+            <div class="container">
+              <div class="pageheaderblock__wrapper">
+                <div class="pageheaderblock__content">
+                  <div class="pageheaderblock__breadcrumbs">
+                    <div class="breadcrumbs">
+                      <div class="container">
+                        <div class="breadcrumbs__items">
+                          <ul>
+                            <li><a href="/"><span>SK Server</span></a></li>
+                            <li><a href=""><span>Продукты</span></a></li>
+                            <li><span>Серверы</span></li>
+                          </ul>
+                        </div>
+                        <!-- /.breadcrumbs__items -->
+                      </div>
+                      <!-- /.container -->
+                    </div>
+                    <!-- /.breadcrumbs -->
+                  </div><!-- /.pageheaderblock__breadcrumbs -->
+                  <div class="pageheaderblock__title">
+                    <h1>Компания <br> <span class="gray">СК СЕРВЕР</span></h1>
+                  </div><!-- /.pageheaderblock__title -->
+                  
+                </div><!-- /.pageheaderblock__content -->
+              
+              </div><!-- /.pageheaderblock__wrapper -->
+            </div><!-- /.container -->
+          </div><!-- /.pageheaderblock -->
+
+          <div class="wavebgblock">
+          <div class="wavebgblock_bottom">
+
+            <div class="pageblocksl seoblock">
+              <div class="container">
+                <div class="seoblock__cols">
+                  <div class="seoblock__col seoblock_image">
+                    <div class="seoblock__image">
+                      <div class="seoblock__img onlyDesktop"><img src="img/image3.png" alt=""></div><!-- /.seoblock__img -->
+                      <div class="seoblock__img onlyMobile"><img src="img/image4.png" alt=""></div><!-- /.seoblock__img -->
+                    </div><!-- /.seoblock__image -->
+                  </div><!-- /.seoblock__col -->
+                  <div class="seoblock__col seoblock__col_content">
+                    <div class="seoblock__content">
+                      <div class="seoblock__title">
+                        <h1>Компания <span class="gray">SK Server Technologies</span> – производитель и поставщик серверного оборудования</h1>
+                      </div><!-- /.seoblock__title -->
+                      <div class="seoblock__text text">
+                        <p>готовая предоставить комплексные решения по созданию IT-инфраструктуры. Компания основана в 2009 году и на сегодняшний день занимает устойчивые позиции на российском IT-рынке.</p>
+                        <ul>
+                          <li>Миссия компании - максимальное использование всех преимуществ современных информационных технологий для стабильного роста и финансовой независимости бизнеса.</li>
+                          <li>Мы стремимся к повышению производительности и снижению времени простоя всей IT-инфраструктуры предприятия наших заказчиков, для чего предлагаем самые современные решения.</li>
+                          <li>География использования оборудования под нашей торговой маркой SK Gelios охватывает большую часть территории России.</li>
+                          <li>Комплексный подход к проектированию и созданию IT-инфраструктуры, предлагаемый нашей компанией, позволяет удовлетворить потребности организации любого размера и выводит её на качественно новый уровень.</li>
+                        </ul>
+                      </div><!-- /.seoblock__text text -->
+                    </div><!-- /.seoblock__content -->
+                  </div><!-- /.seoblock__col -->
+                </div><!-- /.seoblock__cols -->
+              </div>
+            </div>
+            </div>
+             
+
+        
+          </div><!-- /.wavebgblock -->
+
+          <div class="pagevideoblock">
+            <div class="container pagevideo">
+              <div class="pagevideo__video">
+                <a class="youtubepopup" href="#!" data-ytlink="//www.youtube.com/embed/ECJa4PmQvVo?enablejsapi=1" tabindex="0">
+                  <div class="pagevideo__img">
+                    <img src="img/ECJa4PmQvVo.png" alt="">
+                  </div><!-- /.pagevideo__img -->
+                </a>
+              </div><!-- /.pagevideo__video -->
+            </div><!-- /.container pagevideo -->
+          </div><!-- /.pagevideoblock -->
+          
+
+          <div class="docsection">
+            <div class="container">
+              <div class="docsection__wrapper">
+                <div class="docsection__content">
+                  <div class="docsection__items">
+                    <div class="docsection__item">
+                      <div class="blockicon">
+                        <a href="" class="blockicon__link">
+                          <span class="blockicon__icon">
+                            <img src="img/blockicon.svg" alt="">
+                          </span>
+                          <div class="blockicon__title">Каталог продукции</div>
+                        </a>
+                      </div><!-- /.blockicon -->
+                    </div><!-- /.docsection__item -->
+                    <div class="docsection__item">
+                      <div class="blockicon">
+                        <a href="" class="blockicon__link">
+                          <span class="blockicon__icon">
+                            <img src="img/blockicon.svg" alt="">
+                          </span>
+                          <div class="blockicon__title">Реквизиты</div>
+                        </a>
+                      </div><!-- /.blockicon -->
+                    </div><!-- /.docsection__item -->
+                    <div class="docsection__item">
+                      <div class="blockicon">
+                        <a href="" class="blockicon__link">
+                          <span class="blockicon__icon">
+                            <img src="img/blockicon.svg" alt="">
+                          </span>
+                          <div class="blockicon__title">Каталог продукции</div>
+                        </a>
+                      </div><!-- /.blockicon -->
+                    </div><!-- /.docsection__item -->
+                  </div>
+                </div><!-- /.docsection__content -->
+              </div><!-- /.docsection__wrapper -->
+            </div><!-- /.container -->
+          </div><!-- /.docsection -->
+
+
+      </div><!-- /.innerpage -->    
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>

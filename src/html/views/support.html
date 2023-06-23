@@ -1,0 +1,111 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="innerpage">
+        <div class="breadcrumbs">
+          <div class="container">
+            <div class="breadcrumbs__items">
+              <ul>
+                <li><a href="/"><span>SK Server</span></a></li>
+                <li><a href=""><span>Продукты</span></a></li>
+                <li><span>Серверы</span></li>
+              </ul>
+            </div>
+            <!-- /.breadcrumbs__items -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.breadcrumbs -->
+        
+
+        <div class="servicespage">
+          <div class="figure figure9">
+            <img src="img/figure9.png" alt="">
+          </div>
+        
+          <div class="container">
+            <div class="innerpage__header">
+              <h1>Поддержка</h1>
+            </div><!-- /.innerpage__header -->
+           
+               <div class="productsblock__wrapper">
+                <div class="productsblock__items">
+                  <div class="productsblock__item">
+                    <div class="productcard productcard_type3">
+                      <a href='#' class="productcard__wrapper">
+                       
+                        <div class="productcard__content">
+                          <div class="productcard__main">
+                            <div class="productcard__title">
+                              Сервисный центр
+                            </div><!-- /.productcard__title -->
+                            <div class="productcard__text">
+                              Краткий анонс о продукте ....
+                            </div><!-- /.productcard__text -->
+                          </div><!-- /.productcard__main -->
+                          <div class="productcard__footer">
+                            <div class="productcard__link">
+                              <div class="productcard__icn arrowlink">
+                                <img src="img/productcard__icn.svg" alt="">
+                              </div><!-- /.productcard__icn -->
+                              <div class="productcard__lnk">Смотреть</div><!-- /.productcard__lnk -->
+                            </div><!-- /.productcard__link -->
+                          </div><!-- /.productcard__footer -->
+                        </div><!-- /.productcard__content -->
+                        <div class="productcard__image">
+                          <div class="productcard__img">
+                            <img src="img/support1.png" alt="">
+                          </div><!-- /.productcard__img -->
+                          
+                        </div><!-- /.productcard__image -->
+                       
+                      </a><!-- /.productcard__wrapper -->
+                    </div><!-- /.productcard -->
+                  </div><!-- /.productsblock__item -->
+                
+                  <div class="productsblock__item">
+                    <div class="productcard productcard_type3">
+                      <a href='#' class="productcard__wrapper">
+                        
+                        <div class="productcard__content">
+                          <div class="productcard__main">
+                            <div class="productcard__title">
+                              Гарантийные обязательства
+                            </div><!-- /.productcard__title -->
+                            <div class="productcard__text">
+                              Краткий анонс о продукте ....
+                            </div><!-- /.productcard__text -->
+                          </div><!-- /.productcard__main -->
+                          <div class="productcard__footer">
+                            <div class="productcard__link">
+                              <div class="productcard__icn arrowlink">
+                                <img src="img/productcard__icn.svg" alt="">
+                              </div><!-- /.productcard__icn -->
+                              <div class="productcard__lnk">Смотреть</div><!-- /.productcard__lnk -->
+                            </div><!-- /.productcard__link -->
+                          </div><!-- /.productcard__footer -->
+                        </div><!-- /.productcard__content -->
+                        <div class="productcard__image">
+                          <div class="productcard__img">
+                            <img src="img/support2.png" alt="">
+                          </div><!-- /.productcard__img -->
+                          
+                        </div><!-- /.productcard__image -->
+                      </a><!-- /.productcard__wrapper -->
+                    </div><!-- /.productcard -->
+                  </div><!-- /.productsblock__item -->
+                
+             
+                
+                </div><!-- /.productsblock__items -->
+              </div><!-- /.productsblock__wrapper -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.catalogpage -->
+
+
+      </div><!-- /.innerpage -->    
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>

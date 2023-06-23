@@ -1,0 +1,72 @@
+@import "./style.scss";
+
+@media (max-width: 1440px) {
+  .headermain__logo {
+    min-width: 160px;
+  }
+  .phonesk .phonenumber {
+    font-size: 14px;
+  }
+  .headermain__descr {
+    padding-left: 10px;
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  .btn_gray {
+    padding: 14px 14px;
+  }
+  .btn_gray.btn_icon {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  .headertop {
+    height: unset;
+  }
+  .msg > * {
+    margin-left: 10px;
+  }
+  .fitchesblock__wrapper {
+    padding-right: 20px;
+    padding-left: 15px;
+  }
+  .fitchesblock__content {
+    font-size: 14px;
+  }
+  .productcard__wrapper {
+    padding: 20px;
+  }
+  .productcard__content {
+    max-width: 250px;
+    min-width: 250px;
+  }
+  .productcard__title {
+    font-size: 20px;
+  }
+  .layerblock,
+  .layerblock__mask {
+    background-position: center;
+  }
+  .footer__col {
+    margin-left: 30px;
+  }
+  .footer__catalog {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+  #headermain.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999999;
+  }
+}
+
+@media (max-width: 480px) {
+}

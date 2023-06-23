@@ -1,0 +1,105 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="innerpage">
+          <div class="breadcrumbs">
+            <div class="container">
+              <div class="breadcrumbs__items">
+                <ul>
+                  <li><a href="/"><span>SK Server</span></a></li>
+                  <li><a href=""><span>Продукты</span></a></li>
+                  <li><span>Серверы</span></li>
+                </ul>
+              </div>
+              <!-- /.breadcrumbs__items -->
+            </div>
+            <!-- /.container -->
+          </div>
+          <!-- /.breadcrumbs -->
+          <div class="contentpage">
+            <div class="container">
+              <div class="innerpage__header mb-130 xs-mb-30">
+                <h1>Контакты</h1>
+              </div><!-- /.innerpage__header -->
+            </div>
+            <!-- /.container -->
+            <div class="wavebgblock  wavebgblock_desktop">
+              <div class="container">
+                <div class="mapblock">
+                  <div class="mapblock__map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab215bb9e2514f43bf0a588d03c4ccc6154ed454b4f84db938e83b85404e62d8d&amp;source=constructor" width="100%" height="720" frameborder="0"></iframe>
+                  </div><!-- /.mapblock__map -->
+            
+                <div class="mapblock__content">
+                  <div class="mapblock__title">СК Сервер</div>
+                  <div class="mapblock__items">
+                    <div class="mapblock__item">
+                      <div class="phone">
+                        <a href="tel:+7 495 374 81 77" class="phonesk">
+                          <span class="phoneimg">
+                            <img src="img/phonesk.svg" alt="">
+                          </span>
+                          <span class="phonecontent">
+                            <span class="phonenumber">7 495 374 81 77</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div><!-- /.mapblock__item -->
+                    <div class="mapblock__item">
+                      <div class="phone">
+                        <a href="#" class="phonesk">
+                          <span class="phoneimg">
+                            <img src="img/location_on.svg" alt="">
+                          </span>
+                          <span class="phonecontent">
+                            <span class="phonenumber">Москва, Ивана Франко, д. 46, стр. 4</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div><!-- /.mapblock__item -->
+                    <div class="mapblock__item">
+                      <div class="phone">
+                        <a href="mailto:info@skserver.ru" class="phonesk">
+                          <span class="phoneimg">
+                            <img src="img/mail_FILL.svg" alt="">
+                          </span>
+                          <span class="phonecontent">
+                            <span class="phonenumber">info@skserver.ru</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div><!-- /.mapblock__item -->
+                    <div class="mapblock__item">
+                      <div class="phone">
+                        <a href="#" class="phonesk">
+                          <span class="phoneimg">
+                            <img src="img/schedule.svg" alt="">
+                          </span>
+                          <span class="phonecontent">
+                            <span class="phonenumber">с 9:00 до 18:00</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div><!-- /.mapblock__item -->
+                  </div><!-- /.mapblock__items -->
+                  <div class="mapblock__footer">
+                    <div class="mapblock__socials">
+                      <div class="socials">
+                        <div class="socials__title">Мы в соц. сетях:</div>
+                        <div class="socials__items">
+                          <a href="" class="socials__item"><img src="img/inst.svg" alt=""></a>
+                          <a href="" class="socials__item"><img src="img/vk.svg" alt=""></a>
+                          <a href="" class="socials__item"><img src="img/YouTube.svg" alt=""></a>
+                        </div><!-- /.socials__items -->
+                      </div><!-- /.socials -->
+                    </div><!-- /.mapblock__socials -->
+                  </div><!-- /.mapblock__footer -->
+                </div><!-- /.mapblock__content -->
+              </div><!-- /.mapblock -->
+              </div><!-- /.container -->
+            </div><!-- /.wavebgblock -->
+          </div>
+        </div>
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>
