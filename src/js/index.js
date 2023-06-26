@@ -42,7 +42,13 @@ $(document).ready(function () {
     $("[data-toggle='mainmenu']").toggleClass("active")
   })
 
-  $("[data-menutoggle]").on("click", function (e) {
+  $("[data-menutoggle='mainmenu']").on("click", function (e) {
+    e.preventDefault()
+    let menu = $(this).data("menutoggle")
+    $(`[data-menu=${menu}]`).toggleClass("active")
+    $(this).toggleClass("active")
+  })
+  $("[data-menutoggle='mobilemenu']").on("click", function (e) {
     e.preventDefault()
     let menu = $(this).data("menutoggle")
     $(`[data-menu=${menu}]`).toggleClass("active")

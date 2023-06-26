@@ -1,15 +1,18 @@
 <% var data={ title: "MAIN" , author: "" }; %>
   <%= _.template(require('../includes/head.html').default)(data) %>
     <%= _.template(require('../includes/header.html').default)(data) %>
+
+
+
+
+
       <main>
-        <div class="innerpage">
         <div class="breadcrumbs">
           <div class="container">
             <div class="breadcrumbs__items">
               <ul>
-                <li><a href="/"><span>SK Server</span></a></li>
-                <li><a href=""><span>Продукты</span></a></li>
-                <li><span>Серверы</span></li>
+                <li><a href="/"><span>Главная</span></a></li>
+                <li><span>Каталог</span></li>
               </ul>
             </div>
             <!-- /.breadcrumbs__items -->
@@ -17,150 +20,203 @@
           <!-- /.container -->
         </div>
         <!-- /.breadcrumbs -->
-        
+
+        <div class="pageheader">
+          <div class="container">
+            <h1>Каталог продукции</h1>
+          </div><!-- /.container -->
+        </div><!-- /.pageheader -->
 
         <div class="catalogpage">
-          <div class="figure figure7">
-            <img src="img/figure7.png" alt="">
-          </div>
-          <div class="figure figure8">
-            <img src="img/figure8.png" alt="">
-          </div>
           <div class="container">
-            <div class="innerpage__header">
-              <h1>Продукты</h1>
-            </div><!-- /.innerpage__header -->
+
+        
+
+        <div class="productsblock__wrapper">
+          <div class="productsblock__items">
+            <div class="productsblock__item">
+              <div class="productcard">
+                <a href='#' class="productcard__wrapper">
+                  <div class="productcard__content">
+                    <div class="productcard__main">
+                      <div class="productcard__header">
+                        <div class="productcard__logo"><img src="img/volvo.png" alt=""></div>
+                        <!-- /.productcard__logo -->
+                        <div class="productcard__title">
+                          Межосевые спойлеры на Volvo FH
+                        </div><!-- /.productcard__title -->
+
+                      </div><!-- /.productcard__header -->
+                   
+                    </div><!-- /.productcard__main -->
+                    <div class="productcard__footer">
+                      <div class="productcard__link">
+                        <div class="productcard__lnk">Узнать подробнее</div><!-- /.productcard__lnk -->
+
+                        <div class="productcard__icn arrowlink">
+                          <img src="img/productcard__icn.png" alt="">
+                        </div><!-- /.productcard__icn -->
+                      </div><!-- /.productcard__link -->
+                    </div><!-- /.productcard__footer -->
+                  </div><!-- /.productcard__content -->
+                  <div class="productcard__image">
+                    <div class="productcard__img">
+                      <img src="img/1.png" alt="" class='productcard__image_1'>
+                      <img src="img/11.png" alt="" class='productcard__image_2'>
+                    </div><!-- /.productcard__img -->
+
+                  </div><!-- /.productcard__image -->
+                </a><!-- /.productcard__wrapper -->
+              </div><!-- /.productcard -->
+            </div><!-- /.productsblock__item -->
+
+            <div class="productsblock__item">
+              <div class="productcard">
+                <a href='#' class="productcard__wrapper">
+                  <div class="productcard__content">
+                    <div class="productcard__main">
+                      <div class="productcard__header">
+                      <div class="productcard__logo"><img src="img/mers.png" alt=""></div>
+                      <!-- /.productcard__logo -->
+                      <div class="productcard__title">
+                        Аэродинамические спойлеры и обтекатели на Mercedes
+                      </div><!-- /.productcard__title -->
+                    </div>
+                    </div><!-- /.productcard__main -->
+                    <div class="productcard__footer">
+                      <div class="productcard__link">
+                        <div class="productcard__lnk">Узнать подробнее</div><!-- /.productcard__lnk -->
+
+                        <div class="productcard__icn arrowlink">
+                          <img src="img/productcard__icn.png" alt="">
+                        </div><!-- /.productcard__icn -->
+                      </div><!-- /.productcard__link -->
+                    </div><!-- /.productcard__footer -->
+                  </div><!-- /.productcard__content -->
+                  <div class="productcard__image">
+                    <div class="productcard__img">
+                      <img src="img/2.png" alt="" class='productcard__image_1'>
+                      <img src="img/22.png" alt="" class='productcard__image_2'>
+                    </div><!-- /.productcard__img -->
+
+                  </div><!-- /.productcard__image -->
+                </a><!-- /.productcard__wrapper -->
+              </div><!-- /.productcard -->
+            </div><!-- /.productsblock__item -->
+            <div class="productsblock__item">
+              <div class="productcard">
+                <a href='#' class="productcard__wrapper">
+                  <div class="productcard__content">
+                    <div class="productcard__main">
+                      <div class="productcard__header">
+                      <div class="productcard__logo"><img src="img/hnd.png" alt=""></div>
+                      <!-- /.productcard__logo -->
+                      <div class="productcard__title">
+                        Аэродинамические обтекатели на Hyundai
+                      </div><!-- /.productcard__title -->
+                      </div>
+                    </div><!-- /.productcard__main -->
+                    <div class="productcard__footer">
+                      <div class="productcard__link">
+                        <div class="productcard__lnk">Узнать подробнее</div><!-- /.productcard__lnk -->
+
+                        <div class="productcard__icn arrowlink">
+                          <img src="img/productcard__icn.png" alt="">
+                        </div><!-- /.productcard__icn -->
+                      </div><!-- /.productcard__link -->
+                    </div><!-- /.productcard__footer -->
+                  </div><!-- /.productcard__content -->
+                  <div class="productcard__image">
+                    <div class="productcard__img">
+                      <img src="img/3.png" alt="" class='productcard__image_1'>
+                      <img src="img/33.png" alt="" class='productcard__image_2'>
+                    </div><!-- /.productcard__img -->
+
+                  </div><!-- /.productcard__image -->
+                </a><!-- /.productcard__wrapper -->
+              </div><!-- /.productcard -->
+            </div><!-- /.productsblock__item -->
+            <div class="productsblock__item">
+              <div class="productcard">
+                <a href='#' class="productcard__wrapper">
+                  <div class="productcard__content">
+                    <div class="productcard__main">
+                      <div class="productcard__header">
+
+                      <div class="productcard__logo"><img src="img/isuzu.png" alt=""></div>
+                      <!-- /.productcard__logo -->
+                      <div class="productcard__title">
+                        Аэродинамические обтекатели на Isuzu
+                      </div><!-- /.productcard__title -->
+                    </div>
+                    </div><!-- /.productcard__main -->
+                    <div class="productcard__footer">
+                      <div class="productcard__link">
+                        <div class="productcard__lnk">Узнать подробнее</div><!-- /.productcard__lnk -->
+
+                        <div class="productcard__icn arrowlink">
+                          <img src="img/productcard__icn.png" alt="">
+                        </div><!-- /.productcard__icn -->
+                      </div><!-- /.productcard__link -->
+                    </div><!-- /.productcard__footer -->
+                  </div><!-- /.productcard__content -->
+                  <div class="productcard__image">
+                    <div class="productcard__img">
+                      <img src="img/4.png" alt="" class='productcard__image_1'>
+                      <img src="img/44.png" alt="" class='productcard__image_2'>
+                    </div><!-- /.productcard__img -->
+
+                  </div><!-- /.productcard__image -->
+                </a><!-- /.productcard__wrapper -->
+              </div><!-- /.productcard -->
+            </div><!-- /.productsblock__item -->
+
+          </div><!-- /.productsblock__items -->
+        </div><!-- /.productsblock__wrapper -->
+      </div><!-- /.container -->
+    </div><!-- /.catalogpage -->
+
+        <div class="seoblock">
+          <div class="container">
+            <div class="text">
+              <h2>Производство автомобильных изделий из стеклопластика</h2>
+              <p>ООО «Росинтех» - завод полного цикла по разработке, конструированию и изготовлению изделий из
+                стеклопластика с учетом условий эксплуатации готового изделия, в соответствии с требованиями технической
+                и экологической безопасности, с точным соблюдением геометрических и цветовых решений.</p>
+
+              <p>На сегодняшний день продукция из стеклопластика стала очень популярной, благодаря своим уникальным
+                свойствам, в таких отраслях как: медицина, строительство, автопромышленность, судостроение, промтовары,
+                сельское хозяйство, детские комплексы и т.д.</p>
+
+              <p>Стеклопластик, АБС-пластик представляют собой композицию отдельных материалов, сохраняющих свои ценные
+                свойства в едином изделии и наделяющих его новыми, требуемыми характеристиками.</p>
+
+
+
+                  <p><b>Основными преимуществами продукции из стеклопластика являются:</b> </p>
+                  <ul>
+                    <li> высокие прочностные характеристики;</li>
+                    <li> сравнительно маленький вес;</li>
+                    <li> длительный срок службы;</li>
+                    <li> устойчивость к агрессивному воздействию окружающей среды;</li>
+                    <li> антикоррозийные свойства.</li>
+                  </ul>
+    
+                  <p>Стеклопластик, прошедший полный производственный цикл, не содержит летучих соединений, поэтому он
+                    безопасен для человека и окружающей среды.</p>
+    
+                  <p>Компания «РОСИНТЕХ» рада предложить Вам сотрудничество на индивидуальных условиях – производство
+                    изделий по Вашему проекту либо помощь в проектировании и подготовке к серийному выпуску, а также
+                    возможность последующей реализации продукции через нашу торговую сеть.</p>
+              
            
-               <div class="productsblock__wrapper">
-                <div class="productsblock__items">
-                  <div class="productsblock__item slide-in-bottom wow" data-wow-delay="0.1s" data-wow-offset="0" data-wow-duration="1.0s">
-                    <div class="productcard">
-                      <a href='#' class="productcard__wrapper">
-                        <div class="productcard__content">
-                          <div class="productcard__main">
-                            <div class="productcard__title">
-                              Серверы
-                            </div><!-- /.productcard__title -->
-                            <div class="productcard__text">
-                              Краткий анонс о продукте ....
-                            </div><!-- /.productcard__text -->
-                          </div><!-- /.productcard__main -->
-                          <div class="productcard__footer">
-                            <div class="productcard__link">
-                              <div class="productcard__icn arrowlink">
-                                <img src="img/productcard__icn.svg" alt="">
-                              </div><!-- /.productcard__icn -->
-                              <div class="productcard__lnk">Смотреть</div><!-- /.productcard__lnk -->
-                            </div><!-- /.productcard__link -->
-                          </div><!-- /.productcard__footer -->
-                        </div><!-- /.productcard__content -->
-                        <div class="productcard__image">
-                          <div class="productcard__img">
-                            <img src="img/card1.png" alt="">
-                          </div><!-- /.productcard__img -->
-                          
-                        </div><!-- /.productcard__image -->
-                      </a><!-- /.productcard__wrapper -->
-                    </div><!-- /.productcard -->
-                  </div><!-- /.productsblock__item -->
-                  <div class="productsblock__item slide-in-bottom wow" data-wow-delay="0.3s" data-wow-offset="0" data-wow-duration="1.0s">
-                    <div class="productcard">
-                      <a href='#' class="productcard__wrapper">
-                        <div class="productcard__content">
-                          <div class="productcard__main">
-                            <div class="productcard__title">
-                              Серверы
-                            </div><!-- /.productcard__title -->
-                            <div class="productcard__text">
-                              Краткий анонс о продукте ....
-                            </div><!-- /.productcard__text -->
-                          </div><!-- /.productcard__main -->
-                          <div class="productcard__footer">
-                            <div class="productcard__link">
-                              <div class="productcard__icn arrowlink">
-                                <img src="img/productcard__icn.svg" alt="">
-                              </div><!-- /.productcard__icn -->
-                              <div class="productcard__lnk">Смотреть</div><!-- /.productcard__lnk -->
-                            </div><!-- /.productcard__link -->
-                          </div><!-- /.productcard__footer -->
-                        </div><!-- /.productcard__content -->
-                        <div class="productcard__image">
-                          <div class="productcard__img">
-                            <img src="img/card1.png" alt="">
-                          </div><!-- /.productcard__img -->
-                          
-                        </div><!-- /.productcard__image -->
-                      </a><!-- /.productcard__wrapper -->
-                    </div><!-- /.productcard -->
-                  </div><!-- /.productsblock__item -->
-                  <div class="productsblock__item  slide-in-bottom wow" data-wow-delay="0.5s" data-wow-offset="0" data-wow-duration="1.0s">
-                    <div class="productcard">
-                      <a href='#' class="productcard__wrapper">
-                        <div class="productcard__content">
-                          <div class="productcard__main">
-                            <div class="productcard__title">
-                              Графические станции
-                            </div><!-- /.productcard__title -->
-                            <div class="productcard__text">
-                              Краткий анонс о продукте ....
-                            </div><!-- /.productcard__text -->
-                          </div><!-- /.productcard__main -->
-                          <div class="productcard__footer">
-                            <div class="productcard__link">
-                              <div class="productcard__icn arrowlink">
-                                <img src="img/productcard__icn.svg" alt="">
-                              </div><!-- /.productcard__icn -->
-                              <div class="productcard__lnk">Смотреть</div><!-- /.productcard__lnk -->
-                            </div><!-- /.productcard__link -->
-                          </div><!-- /.productcard__footer -->
-                        </div><!-- /.productcard__content -->
-                        <div class="productcard__image">
-                          <div class="productcard__img">
-                            <img src="img/card1.png" alt="">
-                          </div><!-- /.productcard__img -->
-                          
-                        </div><!-- /.productcard__image -->
-                      </a><!-- /.productcard__wrapper -->
-                    </div><!-- /.productcard -->
-                  </div><!-- /.productsblock__item -->
-                  <div class="productsblock__item slide-in-bottom wow" data-wow-delay="0.7s" data-wow-offset="0" data-wow-duration="1.0s">
-                    <div class="productcard">
-                      <a href='#' class="productcard__wrapper">
-                        <div class="productcard__content">
-                          <div class="productcard__main">
-                            <div class="productcard__title">
-                              Серверы
-                            </div><!-- /.productcard__title -->
-                            <div class="productcard__text">
-                              Краткий анонс о продукте ....
-                            </div><!-- /.productcard__text -->
-                          </div><!-- /.productcard__main -->
-                          <div class="productcard__footer">
-                            <div class="productcard__link">
-                              <div class="productcard__icn arrowlink">
-                                <img src="img/productcard__icn.svg" alt="">
-                              </div><!-- /.productcard__icn -->
-                              <div class="productcard__lnk">Смотреть</div><!-- /.productcard__lnk -->
-                            </div><!-- /.productcard__link -->
-                          </div><!-- /.productcard__footer -->
-                        </div><!-- /.productcard__content -->
-                        <div class="productcard__image">
-                          <div class="productcard__img">
-                            <img src="img/card1.png" alt="">
-                          </div><!-- /.productcard__img -->
-                          
-                        </div><!-- /.productcard__image -->
-                      </a><!-- /.productcard__wrapper -->
-                    </div><!-- /.productcard -->
-                  </div><!-- /.productsblock__item -->
-                </div><!-- /.productsblock__items -->
-              </div><!-- /.productsblock__wrapper -->
-          </div>
-          <!-- /.container -->
+            </div><!-- /.text -->
+          </div><!-- /.container -->
         </div>
-        <!-- /.catalogpage -->
 
 
-      </div><!-- /.innerpage -->    
+
+
+
       </main>
       <%= _.template(require('../includes/footer.html').default)(data) %>
