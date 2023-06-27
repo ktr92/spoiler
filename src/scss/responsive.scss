@@ -4,6 +4,15 @@
   .servicecard__content {
     padding: 15px 15px 60px 15px;
   }
+  .blogpage__item_small {
+    margin-left: 30px;
+  }
+  .blogcard__content {
+    padding: 20px;
+  }
+  .blogcard__title  {
+    font-size: 18px;
+  }
   .servicecard__title {
     font-size: 16px;
     line-height: 1.2;
@@ -385,6 +394,19 @@ font-size: 30px;
 
 
 @media (max-width: 480px) {
+  .blogpage__items {
+    display: block;
+  }
+  .blogpage__item_large {
+    max-width: 100%;
+  }
+  .blogpage__item_small {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .blogcard {
+    margin-bottom: 20px;
+  }
   .servicespage__item {
     padding: 0 10px;
     margin-bottom: 22px;
