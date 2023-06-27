@@ -1,15 +1,18 @@
 <% var data={ title: "MAIN" , author: "" }; %>
   <%= _.template(require('../includes/head.html').default)(data) %>
     <%= _.template(require('../includes/header.html').default)(data) %>
+
+
+
+
+
       <main>
-        <div class="innerpage">
         <div class="breadcrumbs">
           <div class="container">
             <div class="breadcrumbs__items">
               <ul>
-                <li><a href="/"><span>SK Server</span></a></li>
-                <li><a href=""><span>Продукты</span></a></li>
-                <li><span>Серверы</span></li>
+                <li><a href="/"><span>Главная</span></a></li>
+                <li><span>Услуги</span></li>
               </ul>
             </div>
             <!-- /.breadcrumbs__items -->
@@ -17,127 +20,108 @@
           <!-- /.container -->
         </div>
         <!-- /.breadcrumbs -->
-        
+
+        <div class="pageheader">
+          <div class="container">
+            <h1>Услуги</h1>
+            
+          </div><!-- /.container -->
+        </div><!-- /.pageheader -->
 
         <div class="servicespage">
-          <div class="figure figure9">
-            <img src="img/figure9.png" alt="">
-          </div>
-          <div class="figure figure10">
-            <img src="img/figure10.png" alt="">
-          </div>
-          
           <div class="container">
-            <div class="innerpage__header">
-              <h1>Услуги</h1>
-            </div><!-- /.innerpage__header -->
-           
-               <div class="productsblock__wrapper">
-                <div class="productsblock__items productsblock__items_col3">
-                  <div class="productsblock__item">
-                    <div class="productcard productcard_type2">
-                      <a href='#' class="productcard__wrapper">
-                        <div class="productcard__image">
-                          <div class="productcard__img">
-                            <img src="img/service1.png" alt="">
-                          </div><!-- /.productcard__img -->
-                          
-                        </div><!-- /.productcard__image -->
-                        <div class="productcard__content">
-                          <div class="productcard__main">
-                            <div class="productcard__title">
-                              Доставка
-                            </div><!-- /.productcard__title -->
-                            <div class="productcard__text">
-                              Краткий анонс о продукте ....
-                            </div><!-- /.productcard__text -->
-                          </div><!-- /.productcard__main -->
-                          <div class="productcard__footer">
-                            <div class="productcard__link">
-                              <div class="productcard__icn arrowlink">
-                                <img src="img/productcard__icn.svg" alt="">
-                              </div><!-- /.productcard__icn -->
-                              <div class="productcard__lnk">Смотреть</div><!-- /.productcard__lnk -->
-                            </div><!-- /.productcard__link -->
-                          </div><!-- /.productcard__footer -->
-                        </div><!-- /.productcard__content -->
-                       
-                      </a><!-- /.productcard__wrapper -->
-                    </div><!-- /.productcard -->
-                  </div><!-- /.productsblock__item -->
-                
-                  <div class="productsblock__item">
-                    <div class="productcard productcard_type2">
-                      <a href='#' class="productcard__wrapper">
-                        <div class="productcard__image">
-                          <div class="productcard__img">
-                            <img src="img/service2.png" alt="">
-                          </div><!-- /.productcard__img -->
-                          
-                        </div><!-- /.productcard__image -->
-                        <div class="productcard__content">
-                          <div class="productcard__main">
-                            <div class="productcard__title">
-                              ОЕМ
-                            </div><!-- /.productcard__title -->
-                            <div class="productcard__text">
-                              Краткий анонс о продукте ....
-                            </div><!-- /.productcard__text -->
-                          </div><!-- /.productcard__main -->
-                          <div class="productcard__footer">
-                            <div class="productcard__link">
-                              <div class="productcard__icn arrowlink">
-                                <img src="img/productcard__icn.svg" alt="">
-                              </div><!-- /.productcard__icn -->
-                              <div class="productcard__lnk">Смотреть</div><!-- /.productcard__lnk -->
-                            </div><!-- /.productcard__link -->
-                          </div><!-- /.productcard__footer -->
-                        </div><!-- /.productcard__content -->
-                       
-                      </a><!-- /.productcard__wrapper -->
-                    </div><!-- /.productcard -->
-                  </div><!-- /.productsblock__item -->
-                
-                  <div class="productsblock__item">
-                    <div class="productcard productcard_type2">
-                      <a href='#' class="productcard__wrapper">
-                        <div class="productcard__image">
-                          <div class="productcard__img">
-                            <img src="img/service3.png" alt="">
-                          </div><!-- /.productcard__img -->
-                          
-                        </div><!-- /.productcard__image -->
-                        <div class="productcard__content">
-                          <div class="productcard__main">
-                            <div class="productcard__title">
-                              Приобретения по ФЗ
-                            </div><!-- /.productcard__title -->
-                            <div class="productcard__text">
-                              Краткий анонс о продукте ....
-                            </div><!-- /.productcard__text -->
-                          </div><!-- /.productcard__main -->
-                          <div class="productcard__footer">
-                            <div class="productcard__link">
-                              <div class="productcard__icn arrowlink">
-                                <img src="img/productcard__icn.svg" alt="">
-                              </div><!-- /.productcard__icn -->
-                              <div class="productcard__lnk">Смотреть</div><!-- /.productcard__lnk -->
-                            </div><!-- /.productcard__link -->
-                          </div><!-- /.productcard__footer -->
-                        </div><!-- /.productcard__content -->
-                       
-                      </a><!-- /.productcard__wrapper -->
-                    </div><!-- /.productcard -->
-                  </div><!-- /.productsblock__item -->
-                
-                </div><!-- /.productsblock__items -->
-              </div><!-- /.productsblock__wrapper -->
-          </div>
-          <!-- /.container -->
+            <div class="servicespage__items">
+              <div class="servicespage__item">
+                <div class="servicecard"  style='background-image: url(img/servicecard1.png);'>
+                  <div class="servicecard__wrapper">
+                    <a href="" class="servicecard__link">
+                      <span class="servicecard__icon"><img src="img/plus.png" alt=""></span><!-- /.servicecard__icon -->
+
+                      <div class="servicecard__content">
+                        <div class="servicecard__block">
+                          <div class="servicecard__title">Установка (монтаж) спойлеров</div><!-- /.servicecard__title -->
+                          <div class="servicecard__text">Установка межосевых спойлеров и аэродинамических обтекателей на автомобили Volvo</div><!-- /.servicecard__text -->
+                          <div class="servicecard__onhover">
+                            <div class="servicecard__button">
+                              <img src="img/servicecard__button.png" alt=""><span>Подробнее</span>
+                            </div>
+                          </div>
+                        </div><!-- /.servicecard__block -->
+                      </div><!-- /.servicecard__content -->
+                    </a><!-- /.servicecard__link -->
+                  </div><!-- /.servicecard__wrapper -->
+                </div><!-- /.servicecard -->
+              </div><!-- /.servicespage__item -->
+              <div class="servicespage__item">
+                <div class="servicecard"  style='background-image: url(img/servicecard1.png);'>
+                  <div class="servicecard__wrapper">
+                    <a href="" class="servicecard__link">
+                      <span class="servicecard__icon"><img src="img/plus.png" alt=""></span><!-- /.servicecard__icon -->
+
+                      <div class="servicecard__content">
+                        <div class="servicecard__block">
+                          <div class="servicecard__title">Установка (монтаж) спойлеров</div><!-- /.servicecard__title -->
+                          <div class="servicecard__text">Установка межосевых спойлеров и аэродинамических обтекателей на</div><!-- /.servicecard__text -->
+                          <div class="servicecard__onhover">
+                            <div class="servicecard__button">
+                              <img src="img/servicecard__button.png" alt=""><span>Подробнее</span>
+                            </div>
+                          </div>
+                        </div><!-- /.servicecard__block -->
+                      </div><!-- /.servicecard__content -->
+                    </a><!-- /.servicecard__link -->
+                  </div><!-- /.servicecard__wrapper -->
+                </div><!-- /.servicecard -->
+              </div><!-- /.servicespage__item -->
+              <div class="servicespage__item">
+                <div class="servicecard"  style='background-image: url(img/servicecard1.png);'>
+                  <div class="servicecard__wrapper">
+                    <a href="" class="servicecard__link">
+                      <span class="servicecard__icon"><img src="img/plus.png" alt=""></span><!-- /.servicecard__icon -->
+
+                      <div class="servicecard__content">
+                        <div class="servicecard__block">
+                          <div class="servicecard__title">Установка (монтаж) спойлеров</div><!-- /.servicecard__title -->
+                          <div class="servicecard__text">Установка межосевых спойлеров и аэродинамических обтекателей на</div><!-- /.servicecard__text -->
+                          <div class="servicecard__onhover">
+                            <div class="servicecard__button">
+                              <img src="img/servicecard__button.png" alt=""><span>Подробнее</span>
+                            </div>
+                          </div>
+                        </div><!-- /.servicecard__block -->
+                      </div><!-- /.servicecard__content -->
+                    </a><!-- /.servicecard__link -->
+                  </div><!-- /.servicecard__wrapper -->
+                </div><!-- /.servicecard -->
+              </div><!-- /.servicespage__item -->
+              <div class="servicespage__item">
+                <div class="servicecard"  style='background-image: url(img/servicecard1.png);'>
+                  <div class="servicecard__wrapper">
+                    <a href="" class="servicecard__link">
+                      <span class="servicecard__icon"><img src="img/plus.png" alt=""></span><!-- /.servicecard__icon -->
+
+                      <div class="servicecard__content">
+                        <div class="servicecard__block">
+                          <div class="servicecard__title">детейлинг</div><!-- /.servicecard__title -->
+                          <div class="servicecard__text">Установка межосевых спойлеров </div><!-- /.servicecard__text -->
+                          <div class="servicecard__onhover">
+                            <div class="servicecard__button">
+                              <img src="img/servicecard__button.png" alt=""><span>Подробнее</span>
+                            </div>
+                          </div>
+                        </div><!-- /.servicecard__block -->
+                      </div><!-- /.servicecard__content -->
+                    </a><!-- /.servicecard__link -->
+                  </div><!-- /.servicecard__wrapper -->
+                </div><!-- /.servicecard -->
+              </div><!-- /.servicespage__item -->
+            </div><!-- /.servicespage__items -->
+          </div><!-- /.container -->
         </div>
-        <!-- /.catalogpage -->
 
 
-      </div><!-- /.innerpage -->    
+
+
+
       </main>
       <%= _.template(require('../includes/footer.html').default)(data) %>

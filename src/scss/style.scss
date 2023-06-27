@@ -725,7 +725,7 @@ h1 {
   font-weight: bold;
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .footer__main {
@@ -2678,6 +2678,7 @@ span#file-chosen {
 } */
 
 .pageheader__back {
+  margin-bottom: 20px;
   a {
     display: flex;
     align-items: center;
@@ -2690,12 +2691,125 @@ span#file-chosen {
   }
 }
 .detailpage__content .detailpage__image {
-  float: left;
   margin-right: 30px;
   display: inline-block;
   margin-bottom: 30px;
+  min-width: 616px;
+}
+
+.detailpage__header {
+  display: flex;
 }
 
 .detailblock {
   display: inline;
+}
+
+.detailpage__anonce {
+  display: inline-block;
+  
+}
+
+.detailpage__content {
+  margin-bottom: 40px;
+}
+
+.detailpage__button {
+  margin-bottom: 50px;
+}
+
+.servicespage {
+  padding-bottom: 110px;
+}
+.servicespage__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.servicespage__item {
+  padding: 0 10px;
+  margin-bottom: 22px;
+  width: 25%;
+}
+.servicecard {
+/*   max-width: 340px; */
+  width: 100%;
+  overflow: hidden;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+}
+.servicecard__wrapper {
+  transition: all 0.3s ease;
+  background-color: #f6f3f4;
+}
+.servicecard__link {
+  display: block;
+  position: relative;
+  min-height: 253px;
+
+  * {
+    transition: all 0.3s ease;
+  }
+}
+.servicecard__content {
+  display: flex;
+  height: 500px;
+  align-items: flex-end;
+  padding: 30px 15px 60px 30px;
+}
+.servicecard__block {
+  transform: translateY(60px);
+}
+.servicecard__title {
+    font-size: 22px;
+    color: rgb(35, 31, 32);
+    font-weight: bold;
+    text-transform: uppercase;
+   margin-bottom: 30px;
+   min-height: 45px;
+}
+.servicecard__text {
+    font-size: 14px;
+    color: rgb(35, 31, 32);
+    line-height: 1.2;
+    min-height: 50px;
+   
+}
+.servicecard__button {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+
+  span {
+    color: #fff;
+    font-size: 12px;
+    padding-left: 10px;
+  }
+}
+.servicecard__onhover {
+  opacity: 0;
+
+}
+.servicecard:hover {
+  .servicecard__wrapper {
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  * {
+    color: #fff;
+  }
+  .servicecard__onhover {
+   opacity: 1;
+
+  }
+  .servicecard__block {
+    transform: translateY(0);
+  }
+}
+
+.servicecard__icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }

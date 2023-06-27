@@ -1,6 +1,13 @@
 @import "./style.scss";
 
 @media (max-width: 1440px) {
+  .servicecard__content {
+    padding: 15px 15px 60px 15px;
+  }
+  .servicecard__title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
   .headermain__logo {
     min-width: 160px;
   }
@@ -53,6 +60,11 @@
 }
 
 @media (max-width: 1023px) {
+  .servicespage__item {
+    padding: 0 10px;
+    margin-bottom: 22px;
+    width: 50%;
+  }
   .productcard__wrapper {
     padding: 20px;
   }
@@ -340,10 +352,45 @@ font-size: 30px;
     display: none !important
 
   }
+  .detailpage__header {
+    display: block;
+  }
+  .detailpage__content .detailpage__image  {
+    min-width: unset;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .servicecard {
+    .servicecard__content {
+     padding-bottom: 30px;
+     height: 420px;
+    }
+     .servicecard__wrapper {
+       background-color: rgba(0,0,0,0.6);
+     }
+   
+     * {
+       color: #fff;
+     }
+     .servicecard__onhover {
+      opacity: 1;
+   
+     }
+     .servicecard__block {
+       transform: translateY(0);
+     }
+   }
+  
 }
 
 
 @media (max-width: 480px) {
+  .servicespage__item {
+    padding: 0 10px;
+    margin-bottom: 22px;
+    width: 100%;
+  }
+
   .productsblock__items {
     margin: 0;
   }
