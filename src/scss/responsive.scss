@@ -10,7 +10,7 @@
   .blogcard__content {
     padding: 20px;
   }
-  .blogcard__title  {
+  .blogcard__title {
     font-size: 18px;
   }
   .servicecard__title {
@@ -95,7 +95,7 @@
     min-width: 100%;
   }
   h1 {
-font-size: 30px;
+    font-size: 30px;
   }
   .footer__items {
     flex-wrap: wrap;
@@ -116,7 +116,7 @@ font-size: 30px;
   .headermain__left {
     padding: 0;
     width: 100%;
-   justify-content: space-between;
+    justify-content: space-between;
   }
   .mobilemenu {
     position: fixed;
@@ -150,9 +150,7 @@ font-size: 30px;
       br {
         display: none;
       }
-      
     }
-
   }
   .mobilemenu.active {
     left: 0;
@@ -162,7 +160,7 @@ font-size: 30px;
     border-top: 1px solid #ebebeb;
     margin: 0 -11px;
   }
- 
+
   .headermain__logo {
     max-width: 220px;
     min-width: 220px;
@@ -179,10 +177,9 @@ font-size: 30px;
       li {
         margin-bottom: 20px;
         a {
-            font-size: 14px;
-            color: $main;
-            font-weight: 600;
-          
+          font-size: 14px;
+          color: $main;
+          font-weight: 600;
         }
       }
     }
@@ -200,7 +197,7 @@ font-size: 30px;
   }
   .headermain {
     width: 100%;
-  padding: 5px 0;
+    padding: 5px 0;
   }
   .mainblock {
     min-height: 480px;
@@ -216,7 +213,7 @@ font-size: 30px;
   }
   .mainblock__content {
     margin-bottom: 30px;
-/*     margin-top: 30px; */
+    /*     margin-top: 30px; */
   }
   .mainblock__button {
     text-align: center;
@@ -229,7 +226,7 @@ font-size: 30px;
   .fitcheblock {
     padding: 20px 0;
   }
- 
+
   .fitchesblock__row {
     flex-wrap: wrap;
   }
@@ -299,7 +296,6 @@ font-size: 30px;
     padding: 10px 0 30px 0;
   }
 
-
   br {
     display: none;
   }
@@ -324,7 +320,7 @@ font-size: 30px;
   .layerblock {
     background-position: 59%;
   }
-   .layerblock__mask {
+  .layerblock__mask {
     background-position: 53%;
   }
   .footer__menu {
@@ -336,21 +332,24 @@ font-size: 30px;
   .footer__col {
     margin: auto;
   }
- .footer__bottom .footer__items > * {
+  .footer__bottom .footer__items > * {
     margin-bottom: 10px;
     width: 100%;
     display: block;
     text-align: center;
   }
-  .footer__dev a {justify-content: center;}
+  .footer__dev a {
+    justify-content: center;
+  }
   .productcard__wrapper .productcard__img {
-    margin-left: auto;margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .productcard__wrapper {
     justify-content: center;
   }
   .mainblock__content {
-      margin-top: 30px;
+    margin-top: 30px;
   }
   .fitchesblock__item {
     width: 100%;
@@ -358,50 +357,47 @@ font-size: 30px;
     max-width: 100%;
   }
   .headerbottom {
-    display: none !important
-
+    display: none !important;
   }
   .detailpage__header {
     display: block;
   }
-  .detailpage__content .detailpage__image  {
+  .detailpage__content .detailpage__image {
     min-width: unset;
     margin-right: 0;
     margin-bottom: 15px;
   }
   .servicecard {
     .servicecard__content {
-     padding-bottom: 30px;
-     height: 420px;
+      padding-bottom: 30px;
+      height: 420px;
     }
-     .servicecard__wrapper {
-       background-color: rgba(0,0,0,0.6);
-     }
-   
-     * {
-       color: #fff;
-     }
-     .servicecard__onhover {
-      opacity: 1;
-   
-     }
-     .servicecard__block {
-       transform: translateY(0);
-     }
-   }
-  
-}
+    .servicecard__wrapper {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
 
+    * {
+      color: #fff;
+    }
+    .servicecard__onhover {
+      opacity: 1;
+    }
+    .servicecard__block {
+      transform: translateY(0);
+    }
+  }
+}
 
 @media (max-width: 480px) {
   .blogpage__items {
     display: block;
+    column-count: 1;
   }
   .blogpage__item_large {
-    max-width: 100%;
+    width: 100%;
   }
   .blogpage__item_small {
-    max-width: 100%;
+    width: 100%;
     margin-left: 0;
   }
   .blogcard {
@@ -422,10 +418,9 @@ font-size: 30px;
   }
   .mainblock__content {
     margin-top: 0;
-}
+  }
 
-.layerblock__content {
-  max-width: 100%;
-}
-
+  .layerblock__content {
+    max-width: 100%;
+  }
 }
