@@ -386,9 +386,39 @@
       transform: translateY(0);
     }
   }
+  .buttonsnav__items {
+    margin: 0 -10px;
+  }
+  .buttonsnav__item {
+    padding: 0 10px;
+  }
 }
 
 @media (max-width: 480px) {
+  .aboutheader__wrapper .aboutheader__content {
+    min-height: 480px;
+  }
+  .buttonsnav__item {
+    width: 100%;
+  }
+  /*   .aboutheader__wrapper {
+    margin-top: -77px;
+  } */
+  .faq-question {
+    padding: 15px 15px 0 15px;
+  }
+  .faq-question {
+    font-size: 18px;
+  }
+  .faq-question:after {
+    right: 15px;
+  }
+  .faq-question {
+    background-position: center right 15px;
+  }
+  .faq-answer {
+    padding: 15px 15px 25px 15px;
+  }
   .blogpage__items {
     display: block;
     column-count: 1;

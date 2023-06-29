@@ -2991,3 +2991,157 @@ span#file-chosen {
 .blogpage {
   padding-bottom: 50px;
 }
+
+.faqblock__item {
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(22, 22, 22, 0.1);
+
+  overflow: hidden;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+
+  /* type/Black */
+  margin: 0 0 30px 0;
+  color: #000000;
+  padding: 0;
+}
+.faq-question {
+  border: none;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center right 36px;
+  padding: 25px 36px 0 36px;
+  position: relative;
+  font-size: 24px;
+  line-height: 21px;
+  font-weight: 600;
+  cursor: pointer;
+  .faq-title {
+    border-bottom: 1px solid transparent;
+    padding-bottom: 20px;
+  }
+}
+
+.faq-question:after {
+  content: url(../img/faqv2__arrow.png);
+  position: absolute;
+  right: 37px;
+  top: 50%;
+
+  margin-top: -13px;
+  transition: all 0.3s ease;
+}
+
+.faq-question.active:after {
+  transform: none;
+  transform: rotate(180deg) translateY(-50%);
+}
+.faq-title {
+  padding-right: 40px;
+}
+.faq-question.active {
+  .faq-title {
+    border-color: #ddd;
+  }
+}
+.accordeonblock {
+  padding-top: 20px;
+}
+.faq-answer {
+  margin: 0;
+  padding: 25px 36px 15px 36px;
+}
+.faq-answer * {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+.faqblock__content {
+  width: 100%;
+
+  border-left: 6px solid $orange;
+}
+.faq-answer {
+  display: none;
+}
+.faq-answer.active {
+  display: block;
+}
+
+.aboutheader__wrapper {
+  position: relative;
+  margin-top: -77px;
+  z-index: 0;
+  .aboutheader__content {
+    min-height: 600px;
+
+    max-width: 690px;
+    display: flex;
+    align-items: center;
+  }
+  h1 {
+    color: #fff;
+    text-shadow: $main 1px 0 15px;
+  }
+}
+.breadcrumbs {
+  position: relative;
+  z-index: 1;
+}
+.breadcrumbs_white {
+  .breadcrumbs__items ul li:nth-last-child(2):after {
+    background: #fff;
+  }
+  .breadcrumbs__items ul li > span {
+    color: #fff;
+  }
+}
+.aboutheader {
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 40px;
+}
+
+.buttonsnav {
+  margin: 40px 0;
+}
+.buttonsnav__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -27px;
+}
+.buttonsnav__item {
+  padding: 0 27px;
+  width: 25%;
+  margin-bottom: 27px;
+}
+.buttonsnav__button {
+}
+.buttonsnav__button {
+  font-size: 16px;
+  color: rgb(246, 243, 244);
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: center;
+  display: block;
+  background: $orange;
+  padding: 25px 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

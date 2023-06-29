@@ -20,7 +20,6 @@ function fileUpload() {
 
 $(document).ready(function () {
   new WOW().init()
-
   ;(function ($) {
     $(function () {
       $("[data-headertabs]").on("click", "li:not(.active)", function () {
@@ -40,6 +39,15 @@ $(document).ready(function () {
   $("[data-toggleclick='mainmenu']").on("click", function (e) {
     e.preventDefault()
     $("[data-toggle='mainmenu']").toggleClass("active")
+  })
+
+  $(".faqblock__items .faqblock__item:first")
+    .find(".faq-question")
+    .addClass("active")
+  $(".faqblock__items .faqblock__item:first").find(".faq-answer").show()
+  $(document).on("click", ".faq-question", function () {
+    $(this).toggleClass("active")
+    $(this).next(".faq-answer").slideToggle().toggleClass("active")
   })
 
   $("[data-menutoggle='mainmenu']").on("click", function (e) {
