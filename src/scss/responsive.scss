@@ -1,6 +1,12 @@
 @import "./style.scss";
 
 @media (max-width: 1440px) {
+  .errorpage__cols {
+    padding: 0;
+  }
+  .errorpage__link {
+    padding: 0 15px;
+  }
   .servicecard__content {
     padding: 15px 15px 60px 15px;
   }
@@ -392,9 +398,30 @@
   .buttonsnav__item {
     padding: 0 10px;
   }
+  .errorpage__main {
+    order: -1;
+    width: 100%;
+  }
+  .errorpage__content {
+    max-width: 100%;
+  }
+  .errorpage__cols {
+    flex-wrap: wrap;
+  }
+  .errorpage__image {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
+  .errorpage__subtitle {
+    font-size: 22px;
+  }
+  .errorpage__link {
+    width: 100%;
+    text-align: center;
+  }
   .aboutheader__wrapper .aboutheader__content {
     min-height: 480px;
   }

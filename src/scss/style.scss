@@ -3145,3 +3145,59 @@ span#file-chosen {
     opacity: 0.8;
   }
 }
+
+.errorpage {
+}
+.errorpage__cols {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+.errorpage__image {
+}
+.errorpage__img {
+}
+.errorpage__main {
+}
+.errorpage__content {
+  max-width: 580px;
+}
+.errorpage__title {
+  font-size: 127px;
+  margin-bottom: 30px;
+  color: #f05a28;
+  font-weight: bold;
+  text-align: center;
+}
+.errorpage__subtitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.errorpage__text {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.errorpage__links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.errorpage__link {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  a {
+    font-size: 16px;
+    color: $orange;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
