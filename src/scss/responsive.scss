@@ -417,6 +417,36 @@
 
     width: 50%;
   }
+  .contactspage__cols {
+    flex-wrap: wrap;
+  }
+  .contactspage__main {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .contactdata__value {
+    font-size: 18px;
+  }
+  .contactdata__icon img {
+    min-width: 30px;
+  }
+  .contactdata__value a {
+    font-size: 18px;
+  }
+  .contactspage__map {
+    width: 100%;
+  }
+  .contactspage {
+    margin: 30px 0;
+  }
+  .contactspage__map {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .contactspage__item {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 480px) {
