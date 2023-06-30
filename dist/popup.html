@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -51,7 +52,8 @@
 
 </head>
 
-<body><header id="header" class="header">
+<body>
+    <header id="header" class="header">
   <div class="jsbackdrop "></div>
 
   <div id='headermain' class=' headertop'>
@@ -296,141 +298,324 @@
   </div><!-- /.mobilemenu -->
 
 </header>
-<!-- /#header.header --> 
-  <style>
-    [data-toggle='modal'] {margin-bottom: 5px;}
-  </style>
-  <main>
-    <br><br><br><br><br>
-  <div class="container innerpage ">
-    <a href="#modal_form" data-toggle='modal' class=" btn_main">форма партнера</a>
-   
-   
-    <span id="showsuccess" class="btn_main">Заявка принята</span>
-    <script>
-      $('#showsuccess').on('click', function() {
-        $('#modal_success').modal('show')
-      })
-    </script>
-    <br>
-    <br>
-  </div>
-  <!-- /.container -->
-</main>
+<!-- /#header.header -->
+      <style>
 
-<div class="modal  fade modal_large" tabindex="-1" role="dialog" id="modal_form">
-  <div class="modal-dialog" role="document">
-    <div class="modalwrapper">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><img src="img/closebutton.svg" alt="" /></span>
-        </button>
-        <div class="modal__content ">
-          <div class="modaltitle modaltitle_left">Регистрация партнера</div><!-- /.modaltitle -->
-          <div class="modal__form">
-              <div class="formblock">
-                <form action="">
+      </style>
+      <main>
+        <br><br><br><br><br>
+        <div class="container innerpage ">
+          <a href="#modal_callback" data-toggle='modal' class=" btn_main">заказать звонок</a>
+          <a href="#modal_order" data-toggle='modal' class=" btn_main">оформление заказа</a>
+          <a href="#modal_request" data-toggle='modal' class=" btn_main">заявка на оптовый прайс-лист</a>
 
-                <div class="formblock__row items-center">
-                  <div class="formblock__input formblock__input_col2">
-                    <label for="" class='formblock__label'>Нименование компании</label>
-                    <input type="text" placeholder="">
-                  </div>
-                  <div class="formblock__input formblock__input_col2">
-                    <label for="" class='formblock__label'>Серийный номер оборудования</label>
-                    <input type="text" placeholder="">
-                  </div>
-                  <div class="formblock__input formblock__input_col2">
-                    <label for="" class='formblock__label'>Город</label>
-                    <input type="text" placeholder=""  >
-                  </div>
-                  <div class="formblock__input formblock__input_col2">
-                    <label for="" class='formblock__label'>Контактное лицо</label>
-                    <input type="text" placeholder="">
-                  </div>
-                  <div class="formblock__input formblock__input_col2">
-                    <label for="" class='formblock__label'>Email</label>
-                    <input type="email" >
-                  </div>
-                  <div class="formblock__input formblock__input_col2">
-                    <label for="" class='formblock__label'>Телефон</label>
-                    <input type="tel" placeholder="">
-                  </div>
-              
-                  <div class="formblock__input formblock__input_col2">
-                    <label for="" class='formblock__label'>Полный адрес</label>
-                    <input type="text" placeholder="">
-                  </div>
-                  <div class="formblock__input formblock__input_col2">
-                    <label for="" class='formblock__label'>Логотип если есть</label>
-                    <div class="fileupload">
-                      <input type="file" id="actual-btn" hidden="">
-  
-                      <label for="actual-btn" class='filelabel'>
-                        <img src="img/Attach.svg" alt=""><span>Прикрепить файл</span>
-                      </label>
-                    </div>
-                    <span id="file-chosen"></span>
-                  </div>
-                
-                  <div class="formblock__input formblock__input_col2 formblock__input_check">
-                    <div class="formblock__check">
-                      <div class="check">
-                        <input type="checkbox" id="agree" checked="checked" value="Y">
-                        <label for="agree">Даю свое согласие на обработку <a href="">персональных данных</a> , соглашаюсь с <a href="">политикой конфиденциальности</a> 
-                        </label>
+
+          <span id="showsuccess" class="btn_main">Заявка принята (заказать звонок)</span>
+          <span id="showsuccess2" class="btn_main">Заявка принята (оформление заказа)</span>
+          <script>
+
+            $('#showsuccess').on('click', function () {
+              $('#modal_success').modal('show')
+            })
+
+            $('#showsuccess2').on('click', function () {
+              $('#modal_success_order').modal('show')
+            })
+
+          </script>
+          <br>
+          <br>
+        </div>
+        <!-- /.container -->
+      </main>
+
+
+
+      <div class="modal  fade " tabindex="-1" role="dialog" id="modal_callback">
+        <div class="modal-dialog" role="document">
+          <div class="modalwrapper">
+            <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><img src="img/closebutton.png" alt="" /></span>
+              </button>
+              <div class="modal__content ">
+                <div class="modaltitle modaltitle_small">Заказать обратный звонок</div><!-- /.modaltitle -->
+                <div class="modal__form">
+                  <div class="formblock">
+                    <form action="">
+
+                      <div class="formblock__row items-center">
+                        <div class="formblock__input ">
+                          <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="formblock__input ">
+                          <input type="tel" placeholder="Номер телефона">
+                        </div>
+                        <div class="formblock__input  formblock__input_submit">
+                          <div class="formblock__submit flex">
+
+                            <button type="submit" class="btn_main ">Заказать звонок</button>
+                          </div>
+                        </div>
+
+                        <div class="formblock__input  formblock__input_check">
+                          <div class="formblock__check">
+                            Даю свое согласие на обработку персональных данных,
+                            соглашаюсь с <a href="">политикой конфиденциальности</a>
+
+                          </div>
+                        </div>
                       </div>
-                    </div>
+
                   </div>
-                  <div class="formblock__input formblock__input_col2 formblock__input_submit">
-                    <div class="formblock__submit flex">
-                
-                      <button type="submit" class="btn_main btn_large">Отправить</button>
-                    </div>
-                  </div>
-                </div>
-              </form>
+                  </form>
                 </div>
 
-          
-          </div><!-- /.modal__form -->
-        </div><!-- /.modal__product -->
-       
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal  fade" tabindex="-1" role="dialog" id='modal_success'>
-  <div class="modal-dialog" role="document">
-    <div class="modalwrapper">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <img src="img/closebutton.svg" alt="">
-          </span>
-        </button>
-        <div class="modal-body">
-          <div class="modalicon">
-            <div class="iconround">
-              <img src="img/success.svg" alt="">
-            </div><!-- /.iconround -->
-          </div><!-- /.modalicon -->
-          <div class="modaltitle">Заявка принята</div><!-- /.modaltitle -->
-          <div class="modalcontent text">
-            <p class="text-center">В скорем времени с вами свяжется наш менеджер для уточнения деталей заказа.</p>
-          </div><!-- /.modalcontent -->
-          <div class="modalbuttons modalbuttons_one">
-            <a href="" class="btn_main btn_large">ОК</a><!-- /.btn_large -->
-          </div><!-- /.modalbuttons -->
-            
+
+              </div><!-- /.modal__form -->
+            </div><!-- /.modal__product -->
+
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+      <div class="modal  fade " tabindex="-1" role="dialog" id="modal_order">
+        <div class="modal-dialog" role="document">
+          <div class="modalwrapper">
+            <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><img src="img/closebutton.png" alt="" /></span>
+              </button>
+              <div class="modal__content ">
+                <div class="modaltitle modaltitle_small modaltitle_left">Оформление заказа</div>
+                <!-- /.modaltitle -->
+                <div class="modal__form">
+                  <div class="formblock formblock_large">
+                    <form action="">
+
+                      <div class="formblock__row items-center">
+                        <div class="formblock__input formblock__input_col2">
+                          <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="formblock__input formblock__input_col2">
+                          <input type="tel" placeholder="Номер телефона">
+                        </div>
+                        <div class="formblock__input formblock__input_col2">
+                          <input type="email" placeholder="E-mail">
+                        </div>
+                        <div class="formblock__input formblock__input_col2">
+                          <input type="text" class='input-error' placeholder="Город" />
+                          <span class="input-errortext">Заполните это поле</span>
+                        </div>
+                        <div class="formblock__input ">
+                          <textarea rows="4" placeholder='Комментарии'></textarea><!-- /# -->
+                        </div>
+                        <div class="formblock__input ">
+                          <div class="orderform__title">Тип оплаты</div>
+                          <div class="orderform__input">
+                            <label for="radio_11" class="radioinput formcheckbox">
+                              <input type="radio" id="radio_11" name="payment" checked="">
+                              <span class="checkmark"></span>
+                              <div class="ordeform__inputcontent">
+                                <span class="orderform__name">Наличными при получении</span><!-- /.orderform__name -->
+                              </div><!-- /.ordeform__inputcontent -->
+
+                            </label>
+                          </div>
+                          <div class="orderform__input">
+                            <label for="radio_12" class="radioinput formcheckbox">
+                              <input type="radio" id="radio_12" name="payment">
+                              <span class="checkmark"></span>
+                              <div class="ordeform__inputcontent">
+                                <span class="orderform__name">Безналичный расчет</span><!-- /.orderform__name -->
+                              </div><!-- /.ordeform__inputcontent -->
+
+                            </label>
+                          </div>
+                        </div>
+                        <div class="formblock__input ">
+                          <div class="orderform__title">Доставка</div>
+                          <div class="orderform__input">
+                            <label for="radio_21" class="radioinput formcheckbox">
+                              <input type="radio" id="radio_21" name="payment" checked="">
+                              <span class="checkmark"></span>
+                              <div class="ordeform__inputcontent">
+                                <span class="orderform__name">Доставка до терминала транспортной
+                                  компании</span><!-- /.orderform__name -->
+                              </div><!-- /.ordeform__inputcontent -->
+
+                            </label>
+                          </div>
+                          <div class="orderform__input">
+                            <label for="radio_22" class="radioinput formcheckbox">
+                              <input type="radio" id="radio_22" name="payment">
+                              <span class="checkmark"></span>
+                              <div class="ordeform__inputcontent">
+                                <span class="orderform__name">Самовывоз со склада в
+                                  Москве</span><!-- /.orderform__name -->
+                              </div><!-- /.ordeform__inputcontent -->
+
+                            </label>
+                          </div>
+                        </div>
+                        <div class="formblock__confirm flex items-center">
+                          <div class="formblock__input  formblock__input_submit">
+                            <div class="formblock__submit flex">
+
+                              <button type="submit" class="btn_main ">Подтвердить заказ</button>
+                            </div>
+                          </div>
+
+                          <div class="formblock__input  formblock__input_check">
+                            <div class="formblock__check">
+                              Даю свое согласие на обработку персональных данных,
+                              соглашаюсь с <a href="">политикой конфиденциальности</a>
+
+                            </div>
+                          </div>
+                        </div><!-- /.flex items-center -->
+
+                      </div>
+
+                  </div>
+                  </form>
+                </div>
 
 
-<footer id="footer" class="footer">
+              </div><!-- /.modal__form -->
+            </div><!-- /.modal__product -->
+
+          </div>
+        </div>
+      </div>
+      <div class="modal  fade " tabindex="-1" role="dialog" id="modal_request">
+        <div class="modal-dialog" role="document">
+          <div class="modalwrapper">
+            <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><img src="img/closebutton.png" alt="" /></span>
+              </button>
+              <div class="modal__content ">
+                <div class="modaltitle modaltitle_small modaltitle_left">Заявка на оптовый прайс-лист</div>
+                <!-- /.modaltitle -->
+                <div class="modal__form">
+                  <div class="formblock formblock_large">
+                    <form action="">
+
+                      <div class="formblock__row items-center">
+                        <div class="formblock__input formblock__input_col2">
+                          <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="formblock__input formblock__input_col2">
+                          <input type="tel" placeholder="Номер телефона">
+                        </div>
+                        <div class="formblock__input formblock__input_col2">
+                          <input type="email" placeholder="E-mail">
+                        </div>
+                        <div class="formblock__input formblock__input_col2">
+                          <input type="text" class='input-error' placeholder="Город" />
+                          <span class="input-errortext">Заполните это поле</span>
+                        </div>
+                        <div class="formblock__input ">
+                          <textarea rows="4" placeholder='Комментарии'></textarea><!-- /# -->
+                        </div>
+                        <div class="formblock__input ">
+                          <div class="fileupload">
+                            <input type="file" id="actual-btn" hidden="">
+
+                            <label for="actual-btn" class="filelabel">
+                              <img src="img/attach_file_black_24dp.svg" alt=""><span>Прикрепить файл</span>
+                            </label>
+                          </div>
+                          <span id="file-chosen"></span>
+                        </div>
+
+                        <div class="formblock__confirm flex items-center">
+                          <div class="formblock__input  formblock__input_submit">
+                            <div class="formblock__submit flex">
+
+                              <button type="submit" class="btn_main ">Отправить</button>
+                            </div>
+                          </div>
+
+                          <div class="formblock__input  formblock__input_check">
+                            <div class="formblock__check">
+                              Даю свое согласие на обработку персональных данных,
+                              соглашаюсь с <a href="">политикой конфиденциальности</a>
+
+                            </div>
+                          </div>
+                        </div><!-- /.flex items-center -->
+
+                      </div>
+
+                  </div>
+                  </form>
+                </div>
+
+
+              </div><!-- /.modal__form -->
+            </div><!-- /.modal__product -->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal  fade" tabindex="-1" role="dialog" id='modal_success'>
+        <div class="modal-dialog" role="document">
+          <div class="modalwrapper">
+            <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                  <img src="img/closebutton.png" alt="">
+                </span>
+              </button>
+              <div class="modal-body">
+                <div class="modalicon">
+                  <img src="img/success.png" alt="">
+                </div><!-- /.modalicon -->
+                <div class="modaltitle">Спасибо!</div><!-- /.modaltitle -->
+                <div class="modalcontent text">
+                  <p class="text-center">Мы свяжемся с Вами в ближайшее время. </p>
+                </div><!-- /.modalcontent -->
+                <div class="modalbuttons modalbuttons_one">
+                  <a href="" class="btn_main ">Закрыть окно</a><!-- /.btn_large -->
+                </div><!-- /.modalbuttons -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal  fade" tabindex="-1" role="dialog" id='modal_success_order'>
+        <div class="modal-dialog" role="document">
+          <div class="modalwrapper">
+            <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                  <img src="img/closebutton.png" alt="">
+                </span>
+              </button>
+              <div class="modal-body">
+                <div class="modalicon">
+                  <img src="img/success.png" alt="">
+                </div><!-- /.modalicon -->
+                <div class="modaltitle">Спасибо!</div><!-- /.modaltitle -->
+                <div class="modalcontent text">
+                  <p class="text-center">Ваш заказ №123 успешно оформлен. <br> Мы свяжемся с Вами в ближайшее время.
+                  </p>
+                </div><!-- /.modalcontent -->
+                <div class="modalbuttons modalbuttons_one">
+                  <a href="" class="btn_main ">Закрыть окно</a><!-- /.btn_large -->
+                </div><!-- /.modalbuttons -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <footer id="footer" class="footer">
 
   <div class="footer__main">
     <div class="container">

@@ -838,13 +838,20 @@ h1 {
   display: block;
 }
 
+.formblock__submit {
+  text-align: center;
+  button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .headermain__search {
   margin-right: 40px;
   width: 100%;
 }
 .searchinput {
-  border-radius: 8px;
-  height: 44px;
+  height: 39px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -853,12 +860,10 @@ h1 {
   align-items: center;
   width: 100%;
   position: relative;
-  background: #191d28;
-  border-radius: 6px;
+  background: #fff;
+
   overflow: hidden;
   width: 100%;
-  max-width: 637px;
-  margin-left: auto;
   input {
     width: 100%;
     background: #191d28;
@@ -1795,10 +1800,6 @@ p {
   /* identical to box height, or 29px */
 
   color: #ffffff;
-}
-span#file-chosen {
-  position: absolute;
-  bottom: 45px;
 }
 
 .detailpage__mainblock {
@@ -3236,4 +3237,9 @@ span#file-chosen {
   width: 100%;
 }
 .map {
+}
+.orderform__title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 14px;
 }

@@ -94,34 +94,30 @@ a {
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: $light;
+  font-weight: 500;
+  font-size: 14px;
+  color: $main;
 }
 ::-moz-placeholder {
   /* Firefox 19+ */
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: $light;
+  font-weight: 500;
+  font-size: 14px;
+  color: $main;
 }
 :-ms-input-placeholder {
   /* IE 10+ */
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: $light;
+  font-weight: 500;
+  font-size: 14px;
+  color: $main;
 }
 :-moz-placeholder {
   /* Firefox 18- */
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: $light;
+  font-weight: 500;
+  font-size: 14px;
+  color: $main;
 }
 .btn_main {
   display: inline-block;
@@ -409,15 +405,36 @@ a {
 .container .container {
   padding: 0;
 }
+.formblock__check {
+  font-size: 10px;
+  color: #888;
+  text-align: center;
+  a {
+    color: #888;
+    text-decoration: underline;
 
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.formblock {
+  max-width: 327px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.formblock_large {
+  max-width: 450px;
+}
 .formblock__row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -20px;
+  margin: 0 -10px;
 }
 
 .formblock__input {
-  padding: 0 20px 37px 20px;
+  margin-bottom: 20px;
+  padding: 0 10px;
   width: 100%;
 }
 
@@ -437,30 +454,30 @@ a {
   input[type="tel"],
   input[type="email"],
   textarea {
-    background: #10131b;
+    background: #fff;
     border: none;
     border-radius: 0;
-    border-bottom: 3px solid rgba(38, 43, 54, 1);
-    padding: 10px 0 26px 0;
+    border: 2px solid #dcdcdc;
+    padding: 12px 16px;
     display: block;
     font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 130%;
-    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
     width: 100%;
     resize: none;
     &.input-error {
-      border-color: #ff0d38;
-      color: #ff0d38;
+      border-color: #990000;
+      color: #990000;
     }
 
     &:focus {
-      border-color: $blue;
+      border-color: $orange;
     }
   }
 }
-
+.orderform__input {
+  margin-bottom: 10px;
+}
 .formblock__label {
   font-style: normal;
   font-weight: 400;
@@ -475,18 +492,24 @@ a {
   position: absolute;
   /*  margin-top: 15px; */
   display: block;
-  bottom: 10px;
-  left: 20px;
+  bottom: -14px;
+  left: 9px;
   font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 10px;
   line-height: 100%;
 
-  color: #ff0d38;
+  color: #990000;
 }
 
 .input-inform {
   color: rgba(83, 90, 103, 0.4);
+}
+
+.formblock__confirm {
+  .formblock__check {
+    text-align: left;
+  }
 }
 
 .check label {
@@ -659,7 +682,7 @@ a {
   position: relative;
   overflow: hidden;
   display: inline-block;
-
+  border: none;
   &:after {
     content: "";
     display: block;
@@ -762,13 +785,13 @@ a {
   margin-right: 17px;
 }
 [data-menu] {
-/*   display: none; */
+  /*   display: none; */
   left: -100%;
   position: fixed;
   transition: all 0.3s linear;
 }
 [data-menu].active {
- left: 0;
+  left: 0;
 }
 
 .jsbackdrop {
@@ -787,9 +810,90 @@ a {
   display: block;
 }
 
+.radioinput {
+  display: flex;
+}
 
+.formcheckbox {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+}
+
+.formcheckbox .checkmark {
+  border: 2px solid $orange;
+  border-radius: 50%;
+  height: 14px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 14px;
+}
+.orderform__name {
+  font-size: 14px;
+}
+.formcheckbox .checkmark:after {
+  border-radius: 50%;
+  content: "";
+  height: 8px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 8px;
+  display: none;
+  background: $orange;
+}
+
+.formcheckbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.formcheckbox input {
+  cursor: pointer;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  width: 0;
+}
+
+.fileupload {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+
+  min-height: 22px;
+  width: 100%;
+}
+
+span#file-chosen {
+  bottom: -10px;
+  position: absolute;
+  font-size: 10px;
+  left: 33px;
+  color: #999;
+}
+
+.fileupload label.filelabel {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.fileupload span {
+  font-style: normal;
+  font-size: 14px;
+
+  color: $main;
+  display: flex;
+  align-items: center;
+}
 
 @media (max-width: 1023px) {
+  .fileupload span {
+    font-size: 14px;
+    line-height: 130%;
+    padding-left: 3px;
+  }
   [data-hiddenxs] {
     display: none;
   }
@@ -853,13 +957,13 @@ a {
     height: unset;
     padding-bottom: 21px;
   }
-  .formblock__input {
-    padding-bottom: 22px;
-  }
-  .input-errortext {
-    bottom: 4px;
-  }
 
+  .input-errortext {
+    bottom: -14px;
+  }
+  .formblock__confirm .formblock__check {
+    text-align: center;
+  }
   .btn_large {
     font-size: 14px;
     line-height: 18px;
