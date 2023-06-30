@@ -1944,88 +1944,6 @@ span#file-chosen {
   }
 }
 
-.docsblock__items {
-}
-.docsblock__item {
-}
-
-.docsblock__wrapper {
-  display: flex;
-  align-items: center;
-  padding-bottom: 21px;
-  transition: all 0.3s ease;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
-  justify-content: space-between;
-}
-.docsblock__icon {
-  margin-right: 24px;
-  min-width: 54px;
-  max-width: 54px;
-}
-.docsblock__content {
-}
-.docsblock__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 100%;
-  margin-bottom: 6px;
-
-  color: #ffffff;
-}
-.docsblock__info {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
-  /* identical to box height, or 21px */
-
-  color: #ffffff;
-
-  opacity: 0.5;
-}
-.docsblock__items {
-  flex-wrap: wrap;
-  margin: 0 -11px;
-}
-.docsblock__item {
-  padding: 0 11px;
-  flex: 1;
-  max-width: 50%;
-}
-
-.docsblock__link {
-  display: block;
-
-  &:hover {
-    .docsblock__wrapper {
-      border-color: $blue;
-    }
-  }
-  &:focus {
-    .docsblock__title {
-      opacity: 0.3;
-    }
-    .docsblock__wrapper {
-      border-color: $blue;
-    }
-  }
-}
-
-.docsblock {
-  margin-bottom: 150px;
-}
-
-.docsblock__main {
-  display: flex;
-  align-items: center;
-}
-.docsblock__items {
-  flex-wrap: wrap;
-}
-.docsblock__item {
-  margin-bottom: 20px;
-}
 .logoblock_type2 {
   margin-bottom: 30px;
   .logoblock__items {
@@ -3200,4 +3118,73 @@ span#file-chosen {
       text-decoration: underline;
     }
   }
+}
+
+.docsblock__wrapper {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  background: #f6f3f4;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 205px;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.docsblock__icon {
+  min-width: 45px;
+  max-width: 45px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.docsblock__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  max-width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  color: $main;
+  margin-bottom: 10px;
+}
+
+.docsblock__info {
+  font-style: normal;
+  font-size: 14px;
+  color: #777;
+}
+
+.docsblock__items {
+  flex-wrap: wrap;
+  margin: 0 -25px;
+}
+
+.docsblock__item {
+  padding: 0 25px;
+
+  width: 33.333%;
+}
+
+.docsblock__link {
+  display: block;
+}
+
+.docsblock {
+  margin: 30px 0 50px 0;
+}
+
+.docsblock__main {
+}
+
+.docsblock__items {
+  flex-wrap: wrap;
+}
+
+.docsblock__item {
+  margin-bottom: 40px;
 }
