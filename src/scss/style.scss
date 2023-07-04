@@ -3234,3 +3234,134 @@ p {
   font-size: 14px;
 }
 
+.landingheader {
+  padding: 20px 0;
+  background: #f6f3f4;
+}
+.landingheader__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.landingheader__title {
+  h1 {
+    font-size: 18px;
+    color: rgb(35, 31, 32);
+    font-weight: bold;
+    line-height: 1.667;
+    margin: 0;
+  }
+ 
+
+  
+}
+.landingheader__menu {
+  ul {
+    @include clear;
+    display: flex;
+    align-items: center;
+    li {
+      margin-left: 40px;
+      a {
+        font-weight: 300;
+        color: $main;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.landingmain {
+  background-position: center;
+  background-size: cover;
+  padding: 90px 0 33px 0;
+}
+.landingmain__wrapper {
+
+
+}
+.landingmain__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 820px;
+}
+.landingmain__title {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #fff;
+  text-align: center;
+ 
+}
+.orange {
+}
+.landingmain__buttons {
+}
+.btn_main {
+}
+
+
+.landindfitches {
+  padding: 90px 0 50px 0;
+}
+.landindfitches__wrapper {
+  position: relative;
+}
+
+.landindfitches__main {
+  min-width: 620px;
+  max-width: 620px;
+  margin-right: 70px;
+}
+.landindfitches__title {
+  font-size: 48px;
+  margin-bottom: 50px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+.landindfitches__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.landindfitches__item {
+  width: 250px;
+  margin-bottom: 50px;
+}
+.landindfitches__content {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.landindfitches__icon {
+  max-width: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.landindfitches__text {
+  font-size: 18px;
+  color: $orange;
+  font-weight: bold;
+  text-align: center;
+
+}
+.landindfitches__aside {
+  width: calc(100% - 680px);
+  position: relative;
+  .landindfitches__image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+
+    img {
+      max-width: initial;
+    }
+
+  }
+  
+}

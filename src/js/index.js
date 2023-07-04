@@ -20,6 +20,18 @@ function fileUpload() {
 
 $(document).ready(function () {
   new WOW().init()
+
+
+  $("a.scrollTo").click(function () {
+
+    var destination = $($(this).attr("href")).offset().top - 90;
+    $("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 1100);
+    return false;
+  });
+
+  
   ;(function ($) {
     $(function () {
       $("[data-headertabs]").on("click", "li:not(.active)", function () {
