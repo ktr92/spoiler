@@ -2,7 +2,7 @@ function initFE() {
   fixElement(300, false, "headermain", "scroll")
   hideText()
   fileUpload()
-  detailSliderInit()
+  detailsliderInit()
   videoPopup()
 }
 
@@ -111,18 +111,42 @@ function hideText() {
   })
 }
 
-function detailSliderInit() {
-  $("[data-slider='detail']").slick({
-    dots: true,
-    arrows: false,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
+function detailsliderInit() {
+  const swiper = new Swiper(".detailswiperpreview", {
+    spaceBetween: 50,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      draggable: true,
+    },
+    slidesPerView: "auto",
+    mousewheel: true,
+    freeMode: true,
+    watchSlidesProgress: true,
+  })
+  const swiper2 = new Swiper(".detailswiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+    pagination: {
+      el: ".detailslider-pagination",
+      clickable: true,
+    },
+    slidesPerView: 1,
+
+    effect: "fade"
+  })
+
+  $(function () {
+    $(".zoom-box").each(function () {
+      $(this).zoom()
+    })
   })
 }
+
 
 function videoPopup() {
   $("[data-ytlink]").click(function () {
