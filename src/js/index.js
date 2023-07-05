@@ -48,6 +48,10 @@ $(document).ready(function () {
     })
   })(jQuery)
 
+  $(".landingheader").on("click", function (e) {
+    e.preventDefault()
+    $('.landingheader__menu').slideToggle()
+  })
   $("[data-toggleclick='mainmenu']").on("click", function (e) {
     e.preventDefault()
     $("[data-toggle='mainmenu']").toggleClass("active")
