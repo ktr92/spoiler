@@ -167,14 +167,19 @@ function videoPopup() {
       '<iframe frameborder="0" width="720" height="480" allow="autoplay; encrypted-media" class="iframe" id="Overlayvideo" allowfullscreen="true">'
     )
       .attr("src", $this.data("ytlink"))
-      .css({ width: 400, height: 300 })
+      .css({ width: 720, height: 480 })
     var $title = ""
     $("#video-view").html($title).append($iframe)
     $("#modal_video").modal("show")
     /*  $("#video-popup").show() */
   })
+  $('#modal_video').on('hidden', function () {
+    // do something…
+    $("#video-view").html("")
+});
   $("#video-close").click(function () {
     $("#video-view").html("")
+    
     /*  $("#video-popup").hide() */
   })
 }

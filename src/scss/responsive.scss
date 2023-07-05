@@ -1,11 +1,21 @@
 @import "./style.scss";
 
 @media (max-width: 1440px) {
+  .landindfitches {
+    width: 100%;
+    overflow: hidden;
+  }
+  .landingcontact__image img {
+    max-width: 500px;
+  }
   .errorpage__cols {
     padding: 0;
   }
   .errorpage__link {
     padding: 0 15px;
+  }
+  .landing h2 {
+    font-size: 40px;
   }
   .servicecard__content {
     padding: 15px 15px 60px 15px;
@@ -510,6 +520,31 @@
   }
   .productbuycard__price {
     font-size: 18px;
+  }
+  .landindfitches__wrapper  {
+    flex-wrap: wrap;
+  }
+  .landindfitches__main {
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .landindfitches__aside, .landindfitches_black .landindfitches__aside {
+    width: 100%;
+  }
+  .landindfitches__aside .landindfitches__image, .landindfitches_black .landindfitches__image {
+    position: initial;
+  }
+
+  .landindfitches_black .landindfitches__main {
+    order: -1;
+  }
+  .landindfitches_black .landindfitches__aside .landindfitches__image {
+    position: initial;
+  }
+  .landingcontact__image img {
+    max-width: 250px;
   }
 }
 

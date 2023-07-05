@@ -976,6 +976,35 @@ span.product-params_right {
 }
 
 
+#lightbox {
+  display: flex;
+  flex-direction: column;
+
+  .lb-dataContainer {
+      order: 0;
+      margin-bottom: 10px;
+
+      //Want to hide the text? no problem
+      .lb-details {
+          opacity: 0;
+      }
+
+      // Want to change the icon? no problem too.
+      .lb-close {
+          background: url(../img/close.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: right;
+      }
+  }
+
+  .lb-outerContainer{
+      order: 1;
+  }
+}
+
+
+
 @media (max-width: 1023px) {
   .fileupload span {
     font-size: 14px;
