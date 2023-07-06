@@ -4,7 +4,16 @@ function initFE() {
   fileUpload()
   detailsliderInit()
   videoPopup()
+  initConnect()
 }
+
+function initConnect () {
+  connect(document.getElementById('spoint1'), document.getElementById('epoint1'), document.getElementById('line1'))
+  connect(document.getElementById('spoint2'), document.getElementById('epoint2'), document.getElementById('line2'))
+  connect(document.getElementById('spoint3'), document.getElementById('epoint3'), document.getElementById('line3'))
+  connect(document.getElementById('spoint4'), document.getElementById('epoint4'), document.getElementById('line4'))
+}
+
 
 function fileUpload() {
   if (document.getElementById("actual-btn")) {
@@ -18,13 +27,50 @@ function fileUpload() {
   }
 }
 
+
+
+function connect(point1, point2, line ) { // draw a line connecting elements
+ 
+// Find the points based off the elements left and top
+var p1 = {x: point1.offsetLeft, y: point1.offsetTop};
+var p2 = {x: point2.offsetLeft, y: point2.offsetTop};
+
+// Get distance between the points for length of line
+var a = p1.x - p2.x;
+var b = p1.y - p2.y;
+var length = Math.sqrt( a*a + b*b );
+
+// Get angle between points
+var angleDeg = Math.atan2(p2.y - p1.y, p2.x - p1.x) * 180 / Math.PI;
+
+// Get distance from edge of point to center
+var pointWidth = point1.clientWidth / 2;
+var pointHeight = point1.clientWidth / 2;
+
+// Set line distance and position
+// Add width/height from above so the line starts in the middle instead of the top-left corner
+line.style.width = length + 'px';
+line.style.left = (p1.x + pointWidth)+ 'px';
+line.style.top = (p1.y + pointHeight) + 'px';
+
+// Rotate line to match angle between points
+line.style.transform = "rotate(" + angleDeg + "deg)";
+}
+
 $(document).ready(function () {
   new WOW().init()
+
+  window.onresize = function() {
+
+    initConnect()
+  }
+
+
 
 
   $("a.scrollTo").click(function () {
 
-    var destination = $($(this).attr("href")).offset().top - 90;
+    var destination = $($(this).attr("href")).offset().top - 30;
     $("html:not(:animated),body:not(:animated)").animate({
       scrollTop: destination
     }, 1100);
