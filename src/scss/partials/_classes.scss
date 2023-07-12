@@ -646,10 +646,10 @@ a {
   text-align: center;
   transition: all 0.3s ease;
   white-space: nowrap;
-/*   &:hover {
+  &:hover {
     color: #fff;
     background: $orange;
-  } */
+  }
 }
 
 .btn_gray.btn_icon {
@@ -661,13 +661,15 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-transition: all 0.3s ease;
   .btn_img {
     display: block;
     max-width: 21px;
     margin-left: 11px;
   }
-
+  &:hover {
+    background: #f6f3f4;
+     color: #231f20;
+  }
 
 }
 
@@ -1104,4 +1106,11 @@ span.product-params_right {
   .xs-pt-40 {
     padding-top: 40px !important;
   }
+}
+
+.lb-nav a.lb-next {
+  opacity: 1 !important;
+}
+.lb-nav a.lb-prev {
+  opacity: 1 !important;
 }

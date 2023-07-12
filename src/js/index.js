@@ -5,15 +5,96 @@ function initFE() {
   detailsliderInit()
   videoPopup()
   initConnect()
+  closeByClickOutside('[data-menu="mainmenu"]', '[data-menutoggle="mainmenu"]')
+  closeByClickOutside('.tp-tooltip', '[data-tooltip]')
+  calc()
+}
+
+function calc() {
+
+  let total = 0
+
+  let wrapper = null
+  
+
+  $('[data-calc="select"]').on('change',  function() {
+    
+
+    $("[data-calc='select']").not(this).prop("selectedIndex", 0);
+
+    let select = $(this).closest('[data-calc="wrapper"]').find('[data-select]')
+    let price = select.attr('data-calcvalue')
+    wrapper = select.attr('data-select')
+
+    let option = $('option:selected', this).attr('data-calc');
+    if (parseFloat(option) > 0) {
+      total += parseFloat(option) + parseFloat(price)
+    } else {
+      total = 0
+      wrapper = null
+    }
+   
+    $("[data-calc='result']").text(total)
+  });
+
+
+
+  $('input[data-input]').on('change',  function() {
+    let value = $(this).attr('data-input');
+    if (wrapper) {
+      if ($(this).is('checked')) {
+        total += parseFloat(value) 
+      } else {
+        total -= parseFloat(value) 
+      }
+    }
+    $("[data-calc='result']").text(total)
+  });
+
+  $('[data-calc="select"]').on('change',  function() {
+    let wrapper = $(this).closest('[data-calc="wrapper"]').find('[data-calc="initial"]').attr('data-calcvalue')
+    let option = $('option:selected', this).attr('data-calc');
+    if (parseFloat(option) > 0) {
+      total = parseFloat(option) + parseFloat(wrapper)
+    } else {
+      total = 0
+    }
+   
+    $("[data-calc='result']").text(total)
+    console.log(option)
+  });
+
+
+ 
+
 }
 
 function initConnect () {
-  connect(document.getElementById('spoint1'), document.getElementById('epoint1'), document.getElementById('line1'))
-  connect(document.getElementById('spoint2'), document.getElementById('epoint2'), document.getElementById('line2'))
-  connect(document.getElementById('spoint3'), document.getElementById('epoint3'), document.getElementById('line3'))
-  connect(document.getElementById('spoint4'), document.getElementById('epoint4'), document.getElementById('line4'))
+  if (document.getElementById('spoint1')) {
+    connect(document.getElementById('spoint1'), document.getElementById('epoint1'), document.getElementById('line1'))
+    connect(document.getElementById('spoint2'), document.getElementById('epoint2'), document.getElementById('line2'))
+    connect(document.getElementById('spoint3'), document.getElementById('epoint3'), document.getElementById('line3'))
+    connect(document.getElementById('spoint4'), document.getElementById('epoint4'), document.getElementById('line4'))
+  }
+ 
 }
 
+function closeByClickOutside(element, button) {
+  $(document).click(function (event) {
+    if (!$(event.target).closest(`${element},${button}`).length) {
+      $(button).removeClass("active")
+      $(element).removeClass("active")
+    }
+  })
+
+  $(document).keyup(function (e) {
+    if (e.key === "Escape") {
+      // escape key maps to keycode `27`
+      $(button).removeClass("active")
+      $(element).removeClass("active")
+    }
+  })
+}
 
 function fileUpload() {
   if (document.getElementById("actual-btn")) {
@@ -94,6 +175,17 @@ $(document).ready(function () {
     })
   })(jQuery)
 
+  $(".tpbutton").on("click", function (e) {
+    e.preventDefault()
+    e.stopPropagation()
+    $('.tp-tooltip').removeClass('active')
+    $(this).closest("[data-tooltip='tooltip']").find('.tp-tooltip').addClass('active')
+  })
+  $(".tpclose").on("click", function (e) {
+    e.preventDefault()
+    e.stopPropagation()
+    $(this).closest("[data-tooltip='tooltip']").find('.tp-tooltip').removeClass('active')
+  })
   $(".landingheader").on("click", function (e) {
     e.preventDefault()
     $('.landingheader__menu').slideToggle()

@@ -364,10 +364,10 @@ a.galleryblock+a.galleryblock {
     margin-bottom: 15px;
   }
   .layerblock {
-    background-position: 59%;
+    background-position: 80%;
   }
   .layerblock__mask {
-    background-position: 53%;
+    background-position: 0;
   }
   .footer__menu {
     display: none;
@@ -546,6 +546,7 @@ a.galleryblock+a.galleryblock {
   .breadcrumbs__items {
     width: 100%;
     overflow-x: auto;
+    overflow-y: hidden;
     white-space: nowrap;
   }
   .productbuycard__price {
@@ -781,7 +782,7 @@ a.galleryblock+a.galleryblock {
   height: 350px;
 }
 .landingcontact {
-  background-position: right -160px bottom -3px;
+  background-position: right -160px top 249px;
   background-size: 302%;
   background-repeat: no-repeat;
 }
@@ -960,4 +961,15 @@ a.galleryblock .galleryblock__title {
     font-size: 12px;
     line-height: 1.2;
   }
+
+  .servicecard__block {
+    min-height: unset;
+  }
+  .contactspage__map {
+    margin-top: 0;
+  }
+  .contactspage__main {
+    margin: 0 0 30px 0;
+  }
+  
 }
