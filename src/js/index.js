@@ -13,28 +13,36 @@ function initFE() {
 function calc() {
 
   let total = 0
-
   let wrapper = null
   
 
-  $('[data-calc="select"]').on('change',  function() {
-    
-
+  $('[data-calc="select"]').on('change',  function() {    
+    total = 0
     $("[data-calc='select']").not(this).prop("selectedIndex", 0);
 
     let select = $(this).closest('[data-calc="wrapper"]').find('[data-select]')
-    let price = select.attr('data-calcvalue')
     wrapper = select.attr('data-select')
 
     let option = $('option:selected', this).attr('data-calc');
+
+    let checked = $('input[data-input]:checked')
+
+    let inputs = 0
+    checked.each(function() {
+      inputs += parseFloat($(this).attr('data-input'))
+    })  
+
+
+  
     if (parseFloat(option) > 0) {
-      total += parseFloat(option) + parseFloat(price)
+      total += parseFloat(option)+ parseFloat(inputs)
     } else {
       total = 0
       wrapper = null
     }
    
     $("[data-calc='result']").text(total)
+    $("[data-calc='inputresult']").val(total)
   });
 
 
@@ -42,7 +50,7 @@ function calc() {
   $('input[data-input]').on('change',  function() {
     let value = $(this).attr('data-input');
     if (wrapper) {
-      if ($(this).is('checked')) {
+      if ($(this).is(':checked')) {
         total += parseFloat(value) 
       } else {
         total -= parseFloat(value) 
@@ -51,19 +59,7 @@ function calc() {
     $("[data-calc='result']").text(total)
   });
 
-  $('[data-calc="select"]').on('change',  function() {
-    let wrapper = $(this).closest('[data-calc="wrapper"]').find('[data-calc="initial"]').attr('data-calcvalue')
-    let option = $('option:selected', this).attr('data-calc');
-    if (parseFloat(option) > 0) {
-      total = parseFloat(option) + parseFloat(wrapper)
-    } else {
-      total = 0
-    }
-   
-    $("[data-calc='result']").text(total)
-    console.log(option)
-  });
-
+  
 
  
 
