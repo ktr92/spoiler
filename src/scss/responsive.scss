@@ -1026,6 +1026,12 @@ a.galleryblock .galleryblock__title {
     margin: 0 -5px;
   }
   .productbuy__item {
-    max-width: 160px;
+    max-width: 140px;
+  }
+  .productbuycard__title {
+    font-size: 18px;
+  }
+  .productbuycard__select select {
+    font-size: 10px;
   }
 }
