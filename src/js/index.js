@@ -48,6 +48,12 @@ function calc() {
 
 
   $('input[data-input]').on('change',  function() {
+    if ($('[data-id="painting"]').is(":checked")) {
+      $('[data-calc="painting"]').addClass('active')
+    } else {
+      $('[data-calc="painting"]').removeClass('active')
+
+    }
     let value = $(this).attr('data-input');
     if (wrapper) {
       if ($(this).is(':checked')) {
@@ -55,6 +61,8 @@ function calc() {
       } else {
         total -= parseFloat(value) 
       }
+
+      
     }
     $("[data-calc='result']").text(total)
   });
@@ -170,6 +178,23 @@ $(document).ready(function () {
       })
     })
   })(jQuery)
+
+
+  /* if ($('.productbuycard__params')) {
+    let items = []
+    $('.productbuycard__params').each(function(){  
+      let rows = $(this).find('.productbuycard__param').toArray()   
+      items.push(rows)
+     
+     
+     
+                    
+    }); 
+    console.log(items)
+
+    
+  
+  } */
 
   $(".tpbutton").on("click", function (e) {
     e.preventDefault()

@@ -697,6 +697,20 @@ a.galleryblock+a.galleryblock {
 }
 
 @media (max-width: 680px) {
+  .productbuy_type2 .productbuycard__param {
+    min-height: 52px !important; 
+  }
+  .pagegallery__item {
+    width: 100%;
+  }
+  .productbuy_type2 .productbuycard__buttons {
+    display: block;
+  }
+  .productbuy_type2 .productbuy__link {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 0;
+  }
   .landinggallery_type2 {
     a.galleryblock, a.galleryblock .galleryblock__content {
       height: 155px;

@@ -557,7 +557,7 @@
                             </div><!-- /.productbuycard__optiontitle -->
                             <div class="productbuycard__check">
                               <label for="check_11" class="radioinput formcheckbox formcheckbox_check">
-                                <input type="checkbox" id="check_11" name="options" data-input="100">
+                                <input type="checkbox" id="check_11" name="options" data-input="100" data-id='painting'>
                                 <span class="checkmark"></span>
                                 <div class="ordeform__inputcontent">
                                   <span class="orderform__name">Окраска изделий
@@ -571,6 +571,15 @@
                                         Вы можете заказать у нас спойлер с не стандартными габаритными 
                                       </div><!-- /.tp-tooltip -->
                                     </span><!-- /.tp -->
+
+                                    <div class="productbuycard__select" data-calc='painting'>
+                                      <select name="" id="" >
+                                        <option value="" >Выберите цвет     </option>
+                                        <option value="" >Белый</option>
+                                        <option value="" >Черный</option>
+                                      </select><!-- /# -->
+                                    </div><!-- /.productbuycard__select -->
+                                   
                                     
                                     </span><!-- /.orderform__name -->
                                 </div><!-- /.ordeform__inputcontent -->
@@ -668,7 +677,7 @@
                           </div><!-- /.productbuycard__option -->
 
                           <div class="productbuycard__result">
-                            <div class="productbuycard__total">ИТОГО: </div><!-- /.productbuycard__total -->
+                            <div class="productbuycard__total">ИТОГО:&nbsp;</div><!-- /.productbuycard__total -->
                             <div class="productbuycard__value">
                               <span data-calc='result'>0</span>
                               <span>&nbsp;руб.</span>
@@ -676,14 +685,22 @@
                               <input type="hidden" name='total' data-calc="inputresult">
                             </div><!-- /.productbuycard__value -->
                           </div><!-- /.productbuycard__result -->
-                          <div class="productbuycard__buttons"><a href="#modal_order" data-toggle='modal' class="btn_main">Заказать</a><!-- /.btn_main --></div><!-- /.productbuycard__buttons -->
+                          <div class="productbuycard__buttons">
+
+                           <!--  <button type="submit" class="btn_main">Заказать</button> -->
+                            
+                            <a href="#modal_order" data-toggle='modal' class="btn_main">Заказать</a>
+
+                            <div class="productbuy__link">
+                              <a href="#modal_request" data-toggle="modal" class="imgtextlink">
+                                <img src="img/pallet_33p9rm7egdgt.svg" alt=""><span>Хочу купить оптом</span>
+                              </a><!-- /.imgtextlink -->
+                            </div><!-- /.productbuy__link -->
+                          
+                          </div><!-- /.productbuycard__buttons -->
                           </div>
                         </div><!-- /.productbuy__wrapper -->
-                        <div class="productbuy__link">
-                          <a href="#modal_request" data-toggle="modal" class="imgtextlink">
-                            <img src="img/pallet_33p9rm7egdgt.svg" alt=""><span>Хочу купить оптом</span>
-                          </a><!-- /.imgtextlink -->
-                        </div><!-- /.productbuy__link -->
+                        
                         </div>
                       </form>
                       </div><!-- /.productbuy -->
@@ -695,8 +712,81 @@
            
           </div><!-- /.container -->
         </div><!-- /.productdetail -->
-        </div>
 
+     
+
+        <div class="pagegallery">
+          <div class="container">
+            <h3>Полезно знать</h3>
+            <div class="pagegallery__main">
+              <div class="pagegallery__items">
+                <div class="pagegallery__item">
+                  <div class="pagegallery__content">
+                    <div class="blogcard">
+                      <div class="blogcard__wrapper">
+                        <a href="#" class="blogcard__link">
+                          <div class="blogcard__image">
+                            <div class="blogcard__mask">
+  
+                            </div>
+                            <img src="img/gallery1.png" alt="" width='457' height='285'>
+                          </div><!-- /.blogcard__image -->
+                          <div class="blogcard__content">
+                            <div class="blogcard__title">
+                              <span>Как узнать заводской номер цвета своего Volvo FH?</span><img src="img/arright.png" alt="">
+                            </div><!-- /.blogcard__title -->
+                          </div><!-- /.blogcard__content -->
+                        </a><!-- /.blogcard__link -->
+                      </div><!-- /.blogcard__wrapper -->
+                    </div>
+                  </div><!-- /.pagegallery__content -->
+                </div><!-- /.pagegallery__item -->
+                <div class="pagegallery__item">
+                  <div class="pagegallery__content">
+                    <div class="blogcard">
+                      <div class="blogcard__wrapper">
+                        <a href="#" class="blogcard__link">
+                          <div class="blogcard__image">
+                            <div class="blogcard__mask">
+  
+                            </div>
+                            <img src="img/gallery1.png" alt="" width='457' height='285'>
+                          </div><!-- /.blogcard__image -->
+                          <div class="blogcard__content">
+                            <div class="blogcard__title">
+                              <span>Как узнать заводской номер цвета своего Volvo FH?</span><img src="img/arright.png" alt="">
+                            </div><!-- /.blogcard__title -->
+                          </div><!-- /.blogcard__content -->
+                        </a><!-- /.blogcard__link -->
+                      </div><!-- /.blogcard__wrapper -->
+                    </div>
+                  </div><!-- /.pagegallery__content -->
+                </div><!-- /.pagegallery__item -->
+                <div class="pagegallery__item">
+                  <div class="pagegallery__content">
+                    <div class="blogcard">
+                      <div class="blogcard__wrapper">
+                        <a href="#" class="blogcard__link">
+                          <div class="blogcard__image">
+                            <div class="blogcard__mask">
+  
+                            </div>
+                            <img src="img/gallery1.png" alt="" width='457' height='285'>
+                          </div><!-- /.blogcard__image -->
+                          <div class="blogcard__content">
+                            <div class="blogcard__title">
+                              <span>Как узнать заводской номер цвета своего Volvo FH?</span><img src="img/arright.png" alt="">
+                            </div><!-- /.blogcard__title -->
+                          </div><!-- /.blogcard__content -->
+                        </a><!-- /.blogcard__link -->
+                      </div><!-- /.blogcard__wrapper -->
+                    </div>
+                  </div><!-- /.pagegallery__content -->
+                </div><!-- /.pagegallery__item -->
+              </div><!-- /.pagegallery__items -->
+            </div><!-- /.pagegallery__main -->
+          </div><!-- /.container -->
+        </div><!-- /.pagegallery -->
 
 
 
