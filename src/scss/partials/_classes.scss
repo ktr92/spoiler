@@ -1110,7 +1110,27 @@ span.product-params_right {
 
 .lb-nav a.lb-next {
   opacity: 1 !important;
+  background: url(../img/arrow_circle_right_black_24dp.svg) right 48% no-repeat !important;
+  background-size: 60px !important;
+  right: -70px !important;
+  position: absolute !important
 }
 .lb-nav a.lb-prev {
   opacity: 1 !important;
+  background: url(../img/arrow_circle_left_black_24dp.svg) left 48% no-repeat !important;
+  background-size: 60px !important;
+  position: absolute !important;
+  left: -70px !important;
+
 }
+/* 
+#lightbox {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  top: 0 !important;
+  position: fixed;
+} */
+#lightboxOverlay { position: fixed !important; top: 0; left: 0; height: 100% !important; width: 100% !important; }
+#lightbox { position: fixed !important; top: 50% !important; transform: translateY(-50%); }

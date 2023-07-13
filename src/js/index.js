@@ -18,12 +18,16 @@ function calc() {
 
   $('[data-calc="select"]').on('change',  function() {    
     total = 0
-    $("[data-calc='select']").not(this).prop("selectedIndex", 0);
-
+   /*  $("[data-calc='select']").not(this).prop("selectedIndex", 0);
+ */
     let select = $(this).closest('[data-calc="wrapper"]').find('[data-select]')
     wrapper = select.attr('data-select')
 
-    let option = $('option:selected', this).attr('data-calc');
+    // let option = $('option:selected', this).attr('data-calc');
+    let option = 0
+     $('[data-calc="select"] option:selected').each(function() {
+      option += parseFloat($(this).attr('data-calc'))
+    })
 
     let checked = $('input[data-input]:checked')
 
@@ -151,7 +155,11 @@ $(document).ready(function () {
   }
 
 
-
+  lightbox.option({
+    'resizeDuration': 50,
+    'wrapAround': true,
+    'loop': true
+  })
 
   $("a.scrollTo").click(function () {
 
