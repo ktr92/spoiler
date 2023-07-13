@@ -101,10 +101,7 @@ const config = {
           from: "./src/fonts",
           to: "./fonts",
         },
-        {
-          from: "./src/favicon",
-          to: "./favicon",
-        },
+       
         {
           from: "./src/img",
           to: "./img",
